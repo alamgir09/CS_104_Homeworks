@@ -1,0 +1,2 @@
+Created by Mohammed Alamgir
+    Doubly Linked List that utilizes vectors for labels, heads, and tails. Created MsgNodes in a doubly linked list with their next and previous pointers in their own vectors. 
