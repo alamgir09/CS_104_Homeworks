@@ -1,0 +1,21 @@
+Problem 1 - More git
+    A) Untracked
+    B) Modified
+    C) Staged
+    D) Modified
+    E) Staged
+        1) The contents of fun_problem.txt is nothing, because checkout moved it to it's previous state
+    F) Modified
+Problem 2 - Makefiles
+    A) TAB
+    B) What actions will get called?
+        make clean) rm -f *.o *~ shape1 shape2 *~
+        make shape1) g++ -std=c++11 -ggdb
+    C) The .Phony tells the compiler to ignore the already existing clean file and go ahead and still delete the executables
+    D) 2,4
+Problem 4 - ADTs
+    1) List - You can use steps as the index and the content at those indices will be strings. Order does matter when baking, thus using a list allows us to keep track of steps.
+    2) Sets - The key would be the channel names, and since there are no duplicates and you only need to know if it if exists, sets are the premier choice. No value associated with the key, thus map isn't the correct choice.
+    3) Map - The players' names are the keys and team names as values. Order does not matter and there are no duplicates, thus list out of the question. Since there is a team name associated with each player, we need to use a map.
+    4) Map - The file extension names are the keys and the possible programs to read/open them are the values. Order does not matter so lists aren't the idea, and since there is a value associated with each file extension, we need a map. 
+

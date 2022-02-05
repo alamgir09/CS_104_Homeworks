@@ -143,9 +143,9 @@ LabelList::LabelList()
 
 }
 
-// To be completed - must adhere to any requirements in the .h file
+// To be completed - must adhere to any requirements in the .h file  //don't delete nodevec
 LabelList::~LabelList()
-{ //don't delete nodevec
+{ 
 
 }
 
@@ -174,7 +174,7 @@ size_t LabelList::size() const
 }
 
 // To be completed - must adhere to any requirements in the .h file
-LabelList::MsgToken LabelList::add(const MsgType& msg)
+LabelList::MsgToken LabelList::add(const MsgType& msg) // You'll have to have to allocate for MsgNode and check if already null when adding
 {
 
 }
