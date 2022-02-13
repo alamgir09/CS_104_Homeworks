@@ -14,13 +14,22 @@ int main(int argc, char* argv[])
         cout << "Must provide an index file" << endl;
         return 1;
     }
-
+    // Only for testing display_text in MDP
+    /*
+    MDParser mdP;
+    ifstream f(argv[1]);
+    cout << "Display_text is " << mdP.display_text(f) << endl;
+    */
+    // return 0;
     // Declare the search engine
     SearchEng seng;
 
     // ---------------------- [TO BE COMPLETED] -------------------------------
     // Create and register appropriate parsers for .md and .txt files
-
+    MDParser mdP;
+    seng.register_parser("md", &mdP);
+    TXTParser txT; 
+    seng.register_parser("txt", &txT);
 
     // Create the SearchUI object
     SearchUI ui(&seng);

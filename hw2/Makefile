@@ -37,14 +37,19 @@ webpage.o: webpage.cpp webpage.h util.h
 
 # Add targets for cmdhandler.o, searcheng.o and combiners.o
 
-
-
+combiners.o: combiners.cpp combiners.h searcheng.h webpage.h
+	$(CXX) $(CXXFLAGS) $(DEFS) -c -o $@ combiners.cpp
+cmdhandler.o: cmdhandler.cpp cmdhandler.h handler.h searcheng.h combiners.h
+	$(CXX) $(CXXFLAGS) $(DEFS) -c -o $@ cmdhandler.cpp
+searcheng.o: searcheng.cpp searcheng.h util.h webpage.h pageparser.h
+	$(CXX) $(CXXFLAGS) $(DEFS) -c -o $@ searcheng.cpp
+	
 # Add a target for the overall executable search-shell that is dependent
 # on all the object files and compiles them together to produce an 
 # executable named search-shell. Use the OBJS variable defined near
 # the top and ensure you compile with the CXXFLAGS.
-
-
+search-shell: $(OBJS)
+	$(CXX) $(CXXFLAGS) $(DEFS) -o $@ $(OBJS)
 
 
 clean:

@@ -9,7 +9,7 @@ using namespace std;
 
 typedef enum { NORMALTEXT, LINKTEXT, ISLINK, LINKURL } PARSE_STATE_T;
 
-// To be completed
+// COMPLETED, DOES NOT NEED TO BE MODIFIED
 void MDParser::parse(std::istream& istr, std::set<std::string>& allSearchableTerms, std::set<std::string>& allOutgoingLinks)
 {
 
@@ -107,6 +107,7 @@ void MDParser::parse(std::istream& istr, std::set<std::string>& allSearchableTer
             term += c;
             c = istr.get();
         }
+    
     }
     
     if(term != "")
@@ -115,7 +116,8 @@ void MDParser::parse(std::istream& istr, std::set<std::string>& allSearchableTer
         // cout << term << endl;
         allSearchableTerms.insert(term);
     }
-    
+    //std::string habibi = MDParser::display_text(istr);
+    //cout << "Return Val is " << habibi << endl;
 }
 
 // To be completed
@@ -123,23 +125,77 @@ std::string MDParser::display_text(std::istream& istr)
 {
     // Referenced from txt_parser.cpp file
 
-    std::string retval; 
+    string retval; 
+
+    // string term = "";
 
     char c = istr.get();
     PARSE_STATE_T state = NORMALTEXT;
 
     while(!istr.fail())
     {
-        if (state != LINKURL)
+        // Checks if special character, else simply adds character to term and moves to next
+        if (!isalnum(c))
         {
-            if (c == '[')
+            // Only one conditional work at a time, depending on state
+            if (state == NORMALTEXT)
             {
-                state = LINKTEXT;
+                if (c == '[')
+                {
+                    state = LINKTEXT;
+                }
                 retval += c;
-                c = istr.get();
+            }
+            else if (state == LINKTEXT)
+            {
+                if (c == ']')
+                {
+                    state = ISLINK;
+                }
+                retval += c;
+            }
+            // Will check if conditions of link are satisfied, else will revert back to LinkText or NormalText depending on character
+            else if (state == ISLINK)
+            {
+                if (c == '[')
+                {
+                    state = LINKTEXT;
+                    retval += c;
+                }
+                else if (c == '(')
+                {
+                    state = LINKURL;
+                }
+                else
+                {
+                    state = NORMALTEXT;
+                    retval += c;
+                }
+                
+            }
+            else if (state == LINKURL)
+            {
+                if (c == ')')
+                {
+                    state = NORMALTEXT;
+                }
+            }
+            c = istr.get();
+        }
+        else
+        {
+            if (state == LINKURL)
+            {
+                continue;
+            }
+            else
+            {
+            retval += c;
+            c = istr.get();
             }
         }
     }
+    cout << "Return Val is " << retval << endl;
     return retval;
 }
 

@@ -66,3 +66,141 @@ Handler::HANDLER_STATUS_T PrintHandler::process(SearchEng* eng, std::istream& in
 }
 
 // Add code for other handler class implementations below
+// For AND, OR, and DIFF
+
+
+AndHandler::AndHandler()
+{
+
+}
+
+
+AndHandler::AndHandler(Handler* next)
+    : Handler(next)
+{
+
+}
+
+
+bool AndHandler::canHandle(const std::string& cmd) const
+{
+    return cmd == "AND";
+
+}
+
+
+Handler::HANDLER_STATUS_T AndHandler::process(SearchEng* eng, std::istream& instr, std::ostream& ostr)
+{
+    // Enter how to process AND
+        return HANDLER_OK;
+}
+
+
+OrHandler::OrHandler()
+{
+
+}
+
+
+OrHandler::OrHandler(Handler* next)
+    : Handler(next)
+{
+
+}
+
+
+bool OrHandler::canHandle(const std::string& cmd) const
+{
+    return cmd == "OR";
+
+}
+
+
+Handler::HANDLER_STATUS_T OrHandler::process(SearchEng* eng, std::istream& instr, std::ostream& ostr)
+{
+    // Enter how to process OR
+    return HANDLER_OK;
+
+}
+
+
+DiffHandler::DiffHandler()
+{
+
+}
+
+
+DiffHandler::DiffHandler(Handler* next)
+    : Handler(next)
+{
+
+}
+
+
+bool DiffHandler::canHandle(const std::string& cmd) const
+{
+    return cmd == "DIFF";
+
+}
+
+
+Handler::HANDLER_STATUS_T DiffHandler::process(SearchEng* eng, std::istream& instr, std::ostream& ostr)
+{
+    // Enter how to process DIFF
+    return HANDLER_OK;
+
+}
+
+IncomingHandler::IncomingHandler()
+{
+
+}
+
+
+IncomingHandler::IncomingHandler(Handler* next)
+    : Handler(next)
+{
+
+}
+
+
+bool IncomingHandler::canHandle(const std::string& cmd) const
+{
+    return cmd == "INCOMING";
+
+}
+
+
+Handler::HANDLER_STATUS_T IncomingHandler::process(SearchEng* eng, std::istream& instr, std::ostream& ostr)
+{
+    // Enter how to process INCOMING
+    return HANDLER_OK;
+
+}
+
+OutgoingHandler::OutgoingHandler()
+{
+
+}
+
+
+OutgoingHandler::OutgoingHandler(Handler* next)
+    : Handler(next)
+{
+
+}
+
+
+bool OutgoingHandler::canHandle(const std::string& cmd) const
+{
+    return cmd == "OUTGOING";
+
+}
+
+
+Handler::HANDLER_STATUS_T OutgoingHandler::process(SearchEng* eng, std::istream& instr, std::ostream& ostr)
+{
+    // Enter how to process OUTGOING
+    return HANDLER_OK;
+
+}

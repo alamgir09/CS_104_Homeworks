@@ -144,7 +144,16 @@ private:
     //    - the webpages that match a particular search term
     //    - Webpage objects and ability to look them up via
     //       their page/filename
+    // Term and outgoing links to the Webpages containing that term
 
+    // Filename to it's pointer
+    // If term exists in WebPage add it to mapFiles
+    // string = filename
+    std::map <std::string, WebPage*> mapFiles;
+    // Term to WebPageSet that contains term
+    // Will dynamically allocate new webpage names to specific term
+    // string = term, WebPageSet containing that term
+    std::map <std::string, WebPageSet> mapTerms;
 
 
 
