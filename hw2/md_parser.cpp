@@ -195,7 +195,7 @@ std::string MDParser::display_text(std::istream& istr)
             }
         }
     }
-    cout << "Return Val is " << retval << endl;
+    // cout << "Return Val is " << retval << endl;
     return retval;
 }
 
