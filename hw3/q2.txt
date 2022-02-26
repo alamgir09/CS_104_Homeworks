@@ -1,0 +1,24 @@
+A* Tracing:
+Explore L
+    - Discover H - (g = 1, h = 4, f = 5) step 1
+    - Discover P - (g = 1, h = 6, f = 7)
+Explore H
+    - Discover G - (g = 2, h = 3, f = 5)
+    - Discover D - (g = 2, h = 3, f = 5) step 2
+Explore D
+    - Discover C - (g = 3, h = 2, f = 5) step 3
+Explore C
+    - Discover again - G - (g = 2, h = 3, f = 5) step 4
+Explore G
+    - Discover K - (g = 3, h = 4, f = 7) step 5
+Explore K
+    - Discover J - (g = 4, h = 3, f = 7) step 6
+Explore J
+    - Discover N - (g = 5, h = 4, f = 9)
+    - Discover I - (g = 5, h = 2, f = 7) step 7
+Explore I
+    - Discover E - (g = 6, h = 1, f = 7) step 8
+Explore E
+    - Discover F - (g = 7, h = 2, f = 9)
+    - Discover A - (g = 7, h = 0, f = 7) step 9
+Target Found - A

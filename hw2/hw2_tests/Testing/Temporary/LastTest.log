@@ -1,0 +1,1642 @@
+Start testing: Feb 13 07:00 UTC
+----------------------------------------------------------
+1/30 Testing: SearchEng.ParserRegistration
+1/30 Test: SearchEng.ParserRegistration
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests" "--gtest_filter=SearchEng.ParserRegistration"
+Directory: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests
+"SearchEng.ParserRegistration" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2221== Memcheck, a memory error detector
+==2221== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2221== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2221== Command: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests --gtest_filter=SearchEng.ParserRegistration
+==2221== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchEng.ParserRegistration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchEng
+[ RUN      ] SearchEng.ParserRegistration
+Unable to open index file: test_parser.md
+/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests.cpp:91: Failure
+Expected: seng.read_page("test_parser.md") throws an exception of type std::invalid_argument.
+  Actual: it throws a different type.
+/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests.cpp:94: Failure
+Expected: seng.read_page("test_parser.md") doesn't throw an exception.
+  Actual: it throws.
+Unable to open index file: <HTML>
+/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests.cpp:108: Failure
+Expected: seng.read_page("test_parser.html") doesn't throw an exception.
+  Actual: it throws.
+[  FAILED  ] SearchEng.ParserRegistration (54 ms)
+[----------] 1 test from SearchEng (56 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (63 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchEng.ParserRegistration
+
+ 1 FAILED TEST
+==2221== 
+==2221== HEAP SUMMARY:
+==2221==     in use at exit: 16 bytes in 2 blocks
+==2221==   total heap usage: 368 allocs, 366 frees, 190,946 bytes allocated
+==2221== 
+==2221== 8 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==2221==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2221==    by 0x11328B: SearchEng_ParserRegistration_Test::TestBody() (searcheng_tests.cpp:90)
+==2221==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221== 
+==2221== 8 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==2221==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2221==    by 0x11362F: SearchEng_ParserRegistration_Test::TestBody() (searcheng_tests.cpp:105)
+==2221==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2221== 
+==2221== LEAK SUMMARY:
+==2221==    definitely lost: 16 bytes in 2 blocks
+==2221==    indirectly lost: 0 bytes in 0 blocks
+==2221==      possibly lost: 0 bytes in 0 blocks
+==2221==    still reachable: 0 bytes in 0 blocks
+==2221==         suppressed: 0 bytes in 0 blocks
+==2221== 
+==2221== For lists of detected and suppressed errors, rerun with: -s
+==2221== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.46 sec
+----------------------------------------------------------
+Test Failed.
+"SearchEng.ParserRegistration" end time: Feb 13 07:00 UTC
+"SearchEng.ParserRegistration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/30 Testing: SearchEng.ReadPageMultipleTimes
+2/30 Test: SearchEng.ReadPageMultipleTimes
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests" "--gtest_filter=SearchEng.ReadPageMultipleTimes"
+Directory: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests
+"SearchEng.ReadPageMultipleTimes" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2222== Memcheck, a memory error detector
+==2222== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2222== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2222== Command: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests --gtest_filter=SearchEng.ReadPageMultipleTimes
+==2222== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchEng.ReadPageMultipleTimes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchEng
+[ RUN      ] SearchEng.ReadPageMultipleTimes
+unknown file: Failure
+C++ exception with description "No parser registered for this extension" thrown in the test body.
+[  FAILED  ] SearchEng.ReadPageMultipleTimes (36 ms)
+[----------] 1 test from SearchEng (37 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (44 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchEng.ReadPageMultipleTimes
+
+ 1 FAILED TEST
+==2222== 
+==2222== HEAP SUMMARY:
+==2222==     in use at exit: 16 bytes in 2 blocks
+==2222==   total heap usage: 296 allocs, 294 frees, 143,518 bytes allocated
+==2222== 
+==2222== 8 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==2222==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2222==    by 0x112AA7: searchEngFactory() (searcheng_tests.cpp:41)
+==2222==    by 0x113AA3: SearchEng_ReadPageMultipleTimes_Test::TestBody() (searcheng_tests.cpp:114)
+==2222==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222== 
+==2222== 8 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==2222==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2222==    by 0x112B0F: searchEngFactory() (searcheng_tests.cpp:42)
+==2222==    by 0x113AA3: SearchEng_ReadPageMultipleTimes_Test::TestBody() (searcheng_tests.cpp:114)
+==2222==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2222== 
+==2222== LEAK SUMMARY:
+==2222==    definitely lost: 16 bytes in 2 blocks
+==2222==    indirectly lost: 0 bytes in 0 blocks
+==2222==      possibly lost: 0 bytes in 0 blocks
+==2222==    still reachable: 0 bytes in 0 blocks
+==2222==         suppressed: 0 bytes in 0 blocks
+==2222== 
+==2222== For lists of detected and suppressed errors, rerun with: -s
+==2222== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Failed.
+"SearchEng.ReadPageMultipleTimes" end time: Feb 13 07:00 UTC
+"SearchEng.ReadPageMultipleTimes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/30 Testing: SearchEng.ANDCombiner
+3/30 Test: SearchEng.ANDCombiner
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests" "--gtest_filter=SearchEng.ANDCombiner"
+Directory: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests
+"SearchEng.ANDCombiner" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2223== Memcheck, a memory error detector
+==2223== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2223== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2223== Command: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests --gtest_filter=SearchEng.ANDCombiner
+==2223== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchEng.ANDCombiner
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchEng
+[ RUN      ] SearchEng.ANDCombiner
+unknown file: Failure
+C++ exception with description "No parser registered for this extension" thrown in the test body.
+[  FAILED  ] SearchEng.ANDCombiner (42 ms)
+[----------] 1 test from SearchEng (44 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (52 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchEng.ANDCombiner
+
+ 1 FAILED TEST
+==2223== 
+==2223== HEAP SUMMARY:
+==2223==     in use at exit: 16 bytes in 2 blocks
+==2223==   total heap usage: 294 allocs, 292 frees, 143,007 bytes allocated
+==2223== 
+==2223== 8 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==2223==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2223==    by 0x112AA7: searchEngFactory() (searcheng_tests.cpp:41)
+==2223==    by 0x112DCB: searchEngTestSetup() (searcheng_tests.cpp:66)
+==2223==    by 0x1143AF: SearchEng_ANDCombiner_Test::TestBody() (searcheng_tests.cpp:140)
+==2223==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223== 
+==2223== 8 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==2223==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2223==    by 0x112B0F: searchEngFactory() (searcheng_tests.cpp:42)
+==2223==    by 0x112DCB: searchEngTestSetup() (searcheng_tests.cpp:66)
+==2223==    by 0x1143AF: SearchEng_ANDCombiner_Test::TestBody() (searcheng_tests.cpp:140)
+==2223==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2223== 
+==2223== LEAK SUMMARY:
+==2223==    definitely lost: 16 bytes in 2 blocks
+==2223==    indirectly lost: 0 bytes in 0 blocks
+==2223==      possibly lost: 0 bytes in 0 blocks
+==2223==    still reachable: 0 bytes in 0 blocks
+==2223==         suppressed: 0 bytes in 0 blocks
+==2223== 
+==2223== For lists of detected and suppressed errors, rerun with: -s
+==2223== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.46 sec
+----------------------------------------------------------
+Test Failed.
+"SearchEng.ANDCombiner" end time: Feb 13 07:00 UTC
+"SearchEng.ANDCombiner" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/30 Testing: SearchEng.ORCombiner
+4/30 Test: SearchEng.ORCombiner
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests" "--gtest_filter=SearchEng.ORCombiner"
+Directory: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests
+"SearchEng.ORCombiner" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2224== Memcheck, a memory error detector
+==2224== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2224== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2224== Command: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests --gtest_filter=SearchEng.ORCombiner
+==2224== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchEng.ORCombiner
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchEng
+[ RUN      ] SearchEng.ORCombiner
+unknown file: Failure
+C++ exception with description "No parser registered for this extension" thrown in the test body.
+[  FAILED  ] SearchEng.ORCombiner (41 ms)
+[----------] 1 test from SearchEng (42 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (49 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchEng.ORCombiner
+
+ 1 FAILED TEST
+==2224== 
+==2224== HEAP SUMMARY:
+==2224==     in use at exit: 16 bytes in 2 blocks
+==2224==   total heap usage: 294 allocs, 292 frees, 143,000 bytes allocated
+==2224== 
+==2224== 8 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==2224==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2224==    by 0x112AA7: searchEngFactory() (searcheng_tests.cpp:41)
+==2224==    by 0x112DCB: searchEngTestSetup() (searcheng_tests.cpp:66)
+==2224==    by 0x1152DF: SearchEng_ORCombiner_Test::TestBody() (searcheng_tests.cpp:169)
+==2224==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224== 
+==2224== 8 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==2224==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2224==    by 0x112B0F: searchEngFactory() (searcheng_tests.cpp:42)
+==2224==    by 0x112DCB: searchEngTestSetup() (searcheng_tests.cpp:66)
+==2224==    by 0x1152DF: SearchEng_ORCombiner_Test::TestBody() (searcheng_tests.cpp:169)
+==2224==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2224== 
+==2224== LEAK SUMMARY:
+==2224==    definitely lost: 16 bytes in 2 blocks
+==2224==    indirectly lost: 0 bytes in 0 blocks
+==2224==      possibly lost: 0 bytes in 0 blocks
+==2224==    still reachable: 0 bytes in 0 blocks
+==2224==         suppressed: 0 bytes in 0 blocks
+==2224== 
+==2224== For lists of detected and suppressed errors, rerun with: -s
+==2224== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.45 sec
+----------------------------------------------------------
+Test Failed.
+"SearchEng.ORCombiner" end time: Feb 13 07:00 UTC
+"SearchEng.ORCombiner" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/30 Testing: SearchEng.DiffCombiner
+5/30 Test: SearchEng.DiffCombiner
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests" "--gtest_filter=SearchEng.DiffCombiner"
+Directory: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests
+"SearchEng.DiffCombiner" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2225== Memcheck, a memory error detector
+==2225== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2225== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2225== Command: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests --gtest_filter=SearchEng.DiffCombiner
+==2225== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchEng.DiffCombiner
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchEng
+[ RUN      ] SearchEng.DiffCombiner
+unknown file: Failure
+C++ exception with description "No parser registered for this extension" thrown in the test body.
+[  FAILED  ] SearchEng.DiffCombiner (40 ms)
+[----------] 1 test from SearchEng (43 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (50 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchEng.DiffCombiner
+
+ 1 FAILED TEST
+==2225== 
+==2225== HEAP SUMMARY:
+==2225==     in use at exit: 16 bytes in 2 blocks
+==2225==   total heap usage: 294 allocs, 292 frees, 143,014 bytes allocated
+==2225== 
+==2225== 8 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==2225==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2225==    by 0x112AA7: searchEngFactory() (searcheng_tests.cpp:41)
+==2225==    by 0x112DCB: searchEngTestSetup() (searcheng_tests.cpp:66)
+==2225==    by 0x115EF3: SearchEng_DiffCombiner_Test::TestBody() (searcheng_tests.cpp:199)
+==2225==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225== 
+==2225== 8 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==2225==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2225==    by 0x112B0F: searchEngFactory() (searcheng_tests.cpp:42)
+==2225==    by 0x112DCB: searchEngTestSetup() (searcheng_tests.cpp:66)
+==2225==    by 0x115EF3: SearchEng_DiffCombiner_Test::TestBody() (searcheng_tests.cpp:199)
+==2225==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2225== 
+==2225== LEAK SUMMARY:
+==2225==    definitely lost: 16 bytes in 2 blocks
+==2225==    indirectly lost: 0 bytes in 0 blocks
+==2225==      possibly lost: 0 bytes in 0 blocks
+==2225==    still reachable: 0 bytes in 0 blocks
+==2225==         suppressed: 0 bytes in 0 blocks
+==2225== 
+==2225== For lists of detected and suppressed errors, rerun with: -s
+==2225== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.45 sec
+----------------------------------------------------------
+Test Failed.
+"SearchEng.DiffCombiner" end time: Feb 13 07:00 UTC
+"SearchEng.DiffCombiner" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/30 Testing: SearchEng.RetrievePage
+6/30 Test: SearchEng.RetrievePage
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests" "--gtest_filter=SearchEng.RetrievePage"
+Directory: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests
+"SearchEng.RetrievePage" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2226== Memcheck, a memory error detector
+==2226== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2226== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2226== Command: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests --gtest_filter=SearchEng.RetrievePage
+==2226== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchEng.RetrievePage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchEng
+[ RUN      ] SearchEng.RetrievePage
+unknown file: Failure
+C++ exception with description "No parser registered for this extension" thrown in the test body.
+[  FAILED  ] SearchEng.RetrievePage (32 ms)
+[----------] 1 test from SearchEng (35 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (42 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchEng.RetrievePage
+
+ 1 FAILED TEST
+==2226== 
+==2226== HEAP SUMMARY:
+==2226==     in use at exit: 16 bytes in 2 blocks
+==2226==   total heap usage: 294 allocs, 292 frees, 142,905 bytes allocated
+==2226== 
+==2226== 8 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==2226==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2226==    by 0x112AA7: searchEngFactory() (searcheng_tests.cpp:41)
+==2226==    by 0x116B13: SearchEng_RetrievePage_Test::TestBody() (searcheng_tests.cpp:227)
+==2226==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226== 
+==2226== 8 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==2226==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2226==    by 0x112B0F: searchEngFactory() (searcheng_tests.cpp:42)
+==2226==    by 0x116B13: SearchEng_RetrievePage_Test::TestBody() (searcheng_tests.cpp:227)
+==2226==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2226== 
+==2226== LEAK SUMMARY:
+==2226==    definitely lost: 16 bytes in 2 blocks
+==2226==    indirectly lost: 0 bytes in 0 blocks
+==2226==      possibly lost: 0 bytes in 0 blocks
+==2226==    still reachable: 0 bytes in 0 blocks
+==2226==         suppressed: 0 bytes in 0 blocks
+==2226== 
+==2226== For lists of detected and suppressed errors, rerun with: -s
+==2226== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Failed.
+"SearchEng.RetrievePage" end time: Feb 13 07:00 UTC
+"SearchEng.RetrievePage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/30 Testing: SearchEng.LinkCornerCases
+7/30 Test: SearchEng.LinkCornerCases
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests" "--gtest_filter=SearchEng.LinkCornerCases"
+Directory: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests
+"SearchEng.LinkCornerCases" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2227== Memcheck, a memory error detector
+==2227== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2227== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2227== Command: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests --gtest_filter=SearchEng.LinkCornerCases
+==2227== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchEng.LinkCornerCases
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchEng
+[ RUN      ] SearchEng.LinkCornerCases
+unknown file: Failure
+C++ exception with description "No parser registered for this extension" thrown in the test body.
+[  FAILED  ] SearchEng.LinkCornerCases (34 ms)
+[----------] 1 test from SearchEng (37 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (44 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchEng.LinkCornerCases
+
+ 1 FAILED TEST
+==2227== 
+==2227== HEAP SUMMARY:
+==2227==     in use at exit: 16 bytes in 2 blocks
+==2227==   total heap usage: 294 allocs, 292 frees, 142,923 bytes allocated
+==2227== 
+==2227== 8 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==2227==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2227==    by 0x112AA7: searchEngFactory() (searcheng_tests.cpp:41)
+==2227==    by 0x118997: SearchEng_LinkCornerCases_Test::TestBody() (searcheng_tests.cpp:314)
+==2227==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227== 
+==2227== 8 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==2227==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2227==    by 0x112B0F: searchEngFactory() (searcheng_tests.cpp:42)
+==2227==    by 0x118997: SearchEng_LinkCornerCases_Test::TestBody() (searcheng_tests.cpp:314)
+==2227==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2227== 
+==2227== LEAK SUMMARY:
+==2227==    definitely lost: 16 bytes in 2 blocks
+==2227==    indirectly lost: 0 bytes in 0 blocks
+==2227==      possibly lost: 0 bytes in 0 blocks
+==2227==    still reachable: 0 bytes in 0 blocks
+==2227==         suppressed: 0 bytes in 0 blocks
+==2227== 
+==2227== For lists of detected and suppressed errors, rerun with: -s
+==2227== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Failed.
+"SearchEng.LinkCornerCases" end time: Feb 13 07:00 UTC
+"SearchEng.LinkCornerCases" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/30 Testing: SearchEng.SameLink
+8/30 Test: SearchEng.SameLink
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests" "--gtest_filter=SearchEng.SameLink"
+Directory: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests
+"SearchEng.SameLink" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2228== Memcheck, a memory error detector
+==2228== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2228== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2228== Command: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests --gtest_filter=SearchEng.SameLink
+==2228== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchEng.SameLink
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchEng
+[ RUN      ] SearchEng.SameLink
+unknown file: Failure
+C++ exception with description "No parser registered for this extension" thrown in the test body.
+[  FAILED  ] SearchEng.SameLink (63 ms)
+[----------] 1 test from SearchEng (65 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (72 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchEng.SameLink
+
+ 1 FAILED TEST
+==2228== 
+==2228== HEAP SUMMARY:
+==2228==     in use at exit: 16 bytes in 2 blocks
+==2228==   total heap usage: 306 allocs, 304 frees, 875,295 bytes allocated
+==2228== 
+==2228== 8 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==2228==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2228==    by 0x112AA7: searchEngFactory() (searcheng_tests.cpp:41)
+==2228==    by 0x118FBF: SearchEng_SameLink_Test::TestBody() (searcheng_tests.cpp:328)
+==2228==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228== 
+==2228== 8 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==2228==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2228==    by 0x112B0F: searchEngFactory() (searcheng_tests.cpp:42)
+==2228==    by 0x118FBF: SearchEng_SameLink_Test::TestBody() (searcheng_tests.cpp:328)
+==2228==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2228== 
+==2228== LEAK SUMMARY:
+==2228==    definitely lost: 16 bytes in 2 blocks
+==2228==    indirectly lost: 0 bytes in 0 blocks
+==2228==      possibly lost: 0 bytes in 0 blocks
+==2228==    still reachable: 0 bytes in 0 blocks
+==2228==         suppressed: 0 bytes in 0 blocks
+==2228== 
+==2228== For lists of detected and suppressed errors, rerun with: -s
+==2228== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.48 sec
+----------------------------------------------------------
+Test Failed.
+"SearchEng.SameLink" end time: Feb 13 07:00 UTC
+"SearchEng.SameLink" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/30 Testing: SearchEng.DisplayPage
+9/30 Test: SearchEng.DisplayPage
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests" "--gtest_filter=SearchEng.DisplayPage"
+Directory: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests
+"SearchEng.DisplayPage" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2229== Memcheck, a memory error detector
+==2229== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2229== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2229== Command: /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests --gtest_filter=SearchEng.DisplayPage
+==2229== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchEng.DisplayPage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchEng
+[ RUN      ] SearchEng.DisplayPage
+unknown file: Failure
+C++ exception with description "No parser registered for this extension" thrown in the test body.
+[  FAILED  ] SearchEng.DisplayPage (35 ms)
+[----------] 1 test from SearchEng (37 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (45 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchEng.DisplayPage
+
+ 1 FAILED TEST
+==2229== 
+==2229== HEAP SUMMARY:
+==2229==     in use at exit: 16 bytes in 2 blocks
+==2229==   total heap usage: 294 allocs, 292 frees, 142,903 bytes allocated
+==2229== 
+==2229== 8 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==2229==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2229==    by 0x112AA7: searchEngFactory() (searcheng_tests.cpp:41)
+==2229==    by 0x119803: SearchEng_DisplayPage_Test::TestBody() (searcheng_tests.cpp:351)
+==2229==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229== 
+==2229== 8 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==2229==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2229==    by 0x112B0F: searchEngFactory() (searcheng_tests.cpp:42)
+==2229==    by 0x119803: SearchEng_DisplayPage_Test::TestBody() (searcheng_tests.cpp:351)
+==2229==    by 0x15E38F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x153417: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x15356B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x153647: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x153B93: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x15E927: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x153DDB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229==    by 0x112397: main (in /work/hw-alamgir/hw2/hw2_tests/searcheng_tests/searcheng_tests)
+==2229== 
+==2229== LEAK SUMMARY:
+==2229==    definitely lost: 16 bytes in 2 blocks
+==2229==    indirectly lost: 0 bytes in 0 blocks
+==2229==      possibly lost: 0 bytes in 0 blocks
+==2229==    still reachable: 0 bytes in 0 blocks
+==2229==         suppressed: 0 bytes in 0 blocks
+==2229== 
+==2229== For lists of detected and suppressed errors, rerun with: -s
+==2229== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.46 sec
+----------------------------------------------------------
+Test Failed.
+"SearchEng.DisplayPage" end time: Feb 13 07:00 UTC
+"SearchEng.DisplayPage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/30 Testing: Parsers.MdParserSpecialStart
+10/30 Test: Parsers.MdParserSpecialStart
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests" "--gtest_filter=Parsers.MdParserSpecialStart"
+Directory: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests
+"Parsers.MdParserSpecialStart" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2230== Memcheck, a memory error detector
+==2230== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2230== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2230== Command: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests --gtest_filter=Parsers.MdParserSpecialStart
+==2230== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Parsers.MdParserSpecialStart
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Parsers
+[ RUN      ] Parsers.MdParserSpecialStart
+[       OK ] Parsers.MdParserSpecialStart (16 ms)
+[----------] 1 test from Parsers (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+==2230== 
+==2230== HEAP SUMMARY:
+==2230==     in use at exit: 0 bytes in 0 blocks
+==2230==   total heap usage: 300 allocs, 300 frees, 121,947 bytes allocated
+==2230== 
+==2230== All heap blocks were freed -- no leaks are possible
+==2230== 
+==2230== For lists of detected and suppressed errors, rerun with: -s
+==2230== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Passed.
+"Parsers.MdParserSpecialStart" end time: Feb 13 07:00 UTC
+"Parsers.MdParserSpecialStart" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/30 Testing: Parsers.MdParserSpecialEnd
+11/30 Test: Parsers.MdParserSpecialEnd
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests" "--gtest_filter=Parsers.MdParserSpecialEnd"
+Directory: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests
+"Parsers.MdParserSpecialEnd" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2231== Memcheck, a memory error detector
+==2231== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2231== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2231== Command: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests --gtest_filter=Parsers.MdParserSpecialEnd
+==2231== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Parsers.MdParserSpecialEnd
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Parsers
+[ RUN      ] Parsers.MdParserSpecialEnd
+[       OK ] Parsers.MdParserSpecialEnd (16 ms)
+[----------] 1 test from Parsers (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (25 ms total)
+[  PASSED  ] 1 test.
+==2231== 
+==2231== HEAP SUMMARY:
+==2231==     in use at exit: 0 bytes in 0 blocks
+==2231==   total heap usage: 300 allocs, 300 frees, 121,933 bytes allocated
+==2231== 
+==2231== All heap blocks were freed -- no leaks are possible
+==2231== 
+==2231== For lists of detected and suppressed errors, rerun with: -s
+==2231== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Parsers.MdParserSpecialEnd" end time: Feb 13 07:00 UTC
+"Parsers.MdParserSpecialEnd" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/30 Testing: Parsers.MdParserSpecialMiddle
+12/30 Test: Parsers.MdParserSpecialMiddle
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests" "--gtest_filter=Parsers.MdParserSpecialMiddle"
+Directory: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests
+"Parsers.MdParserSpecialMiddle" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2232== Memcheck, a memory error detector
+==2232== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2232== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2232== Command: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests --gtest_filter=Parsers.MdParserSpecialMiddle
+==2232== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Parsers.MdParserSpecialMiddle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Parsers
+[ RUN      ] Parsers.MdParserSpecialMiddle
+[       OK ] Parsers.MdParserSpecialMiddle (16 ms)
+[----------] 1 test from Parsers (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+==2232== 
+==2232== HEAP SUMMARY:
+==2232==     in use at exit: 0 bytes in 0 blocks
+==2232==   total heap usage: 304 allocs, 304 frees, 122,133 bytes allocated
+==2232== 
+==2232== All heap blocks were freed -- no leaks are possible
+==2232== 
+==2232== For lists of detected and suppressed errors, rerun with: -s
+==2232== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Parsers.MdParserSpecialMiddle" end time: Feb 13 07:00 UTC
+"Parsers.MdParserSpecialMiddle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/30 Testing: Parsers.MdParserTextFull
+13/30 Test: Parsers.MdParserTextFull
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests" "--gtest_filter=Parsers.MdParserTextFull"
+Directory: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests
+"Parsers.MdParserTextFull" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2233== Memcheck, a memory error detector
+==2233== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2233== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2233== Command: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests --gtest_filter=Parsers.MdParserTextFull
+==2233== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Parsers.MdParserTextFull
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Parsers
+[ RUN      ] Parsers.MdParserTextFull
+[       OK ] Parsers.MdParserTextFull (19 ms)
+[----------] 1 test from Parsers (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (27 ms total)
+[  PASSED  ] 1 test.
+==2233== 
+==2233== HEAP SUMMARY:
+==2233==     in use at exit: 0 bytes in 0 blocks
+==2233==   total heap usage: 318 allocs, 318 frees, 123,764 bytes allocated
+==2233== 
+==2233== All heap blocks were freed -- no leaks are possible
+==2233== 
+==2233== For lists of detected and suppressed errors, rerun with: -s
+==2233== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Parsers.MdParserTextFull" end time: Feb 13 07:00 UTC
+"Parsers.MdParserTextFull" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/30 Testing: Parsers.MdParserLinksSepStart
+14/30 Test: Parsers.MdParserLinksSepStart
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests" "--gtest_filter=Parsers.MdParserLinksSepStart"
+Directory: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests
+"Parsers.MdParserLinksSepStart" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2234== Memcheck, a memory error detector
+==2234== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2234== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2234== Command: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests --gtest_filter=Parsers.MdParserLinksSepStart
+==2234== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Parsers.MdParserLinksSepStart
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Parsers
+[ RUN      ] Parsers.MdParserLinksSepStart
+[       OK ] Parsers.MdParserLinksSepStart (17 ms)
+[----------] 1 test from Parsers (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (25 ms total)
+[  PASSED  ] 1 test.
+==2234== 
+==2234== HEAP SUMMARY:
+==2234==     in use at exit: 0 bytes in 0 blocks
+==2234==   total heap usage: 312 allocs, 312 frees, 122,363 bytes allocated
+==2234== 
+==2234== All heap blocks were freed -- no leaks are possible
+==2234== 
+==2234== For lists of detected and suppressed errors, rerun with: -s
+==2234== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Parsers.MdParserLinksSepStart" end time: Feb 13 07:00 UTC
+"Parsers.MdParserLinksSepStart" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/30 Testing: Parsers.MdParserLinksSepEnd
+15/30 Test: Parsers.MdParserLinksSepEnd
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests" "--gtest_filter=Parsers.MdParserLinksSepEnd"
+Directory: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests
+"Parsers.MdParserLinksSepEnd" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2235== Memcheck, a memory error detector
+==2235== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2235== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2235== Command: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests --gtest_filter=Parsers.MdParserLinksSepEnd
+==2235== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Parsers.MdParserLinksSepEnd
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Parsers
+[ RUN      ] Parsers.MdParserLinksSepEnd
+[       OK ] Parsers.MdParserLinksSepEnd (16 ms)
+[----------] 1 test from Parsers (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+==2235== 
+==2235== HEAP SUMMARY:
+==2235==     in use at exit: 0 bytes in 0 blocks
+==2235==   total heap usage: 312 allocs, 312 frees, 122,349 bytes allocated
+==2235== 
+==2235== All heap blocks were freed -- no leaks are possible
+==2235== 
+==2235== For lists of detected and suppressed errors, rerun with: -s
+==2235== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Parsers.MdParserLinksSepEnd" end time: Feb 13 07:00 UTC
+"Parsers.MdParserLinksSepEnd" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/30 Testing: Parsers.MdParserLinksSepMiddle
+16/30 Test: Parsers.MdParserLinksSepMiddle
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests" "--gtest_filter=Parsers.MdParserLinksSepMiddle"
+Directory: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests
+"Parsers.MdParserLinksSepMiddle" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2236== Memcheck, a memory error detector
+==2236== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2236== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2236== Command: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests --gtest_filter=Parsers.MdParserLinksSepMiddle
+==2236== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Parsers.MdParserLinksSepMiddle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Parsers
+[ RUN      ] Parsers.MdParserLinksSepMiddle
+[       OK ] Parsers.MdParserLinksSepMiddle (17 ms)
+[----------] 1 test from Parsers (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (25 ms total)
+[  PASSED  ] 1 test.
+==2236== 
+==2236== HEAP SUMMARY:
+==2236==     in use at exit: 0 bytes in 0 blocks
+==2236==   total heap usage: 314 allocs, 314 frees, 122,656 bytes allocated
+==2236== 
+==2236== All heap blocks were freed -- no leaks are possible
+==2236== 
+==2236== For lists of detected and suppressed errors, rerun with: -s
+==2236== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Parsers.MdParserLinksSepMiddle" end time: Feb 13 07:00 UTC
+"Parsers.MdParserLinksSepMiddle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/30 Testing: Parsers.MdParserLinksFull
+17/30 Test: Parsers.MdParserLinksFull
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests" "--gtest_filter=Parsers.MdParserLinksFull"
+Directory: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests
+"Parsers.MdParserLinksFull" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2237== Memcheck, a memory error detector
+==2237== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2237== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2237== Command: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests --gtest_filter=Parsers.MdParserLinksFull
+==2237== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Parsers.MdParserLinksFull
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Parsers
+[ RUN      ] Parsers.MdParserLinksFull
+[       OK ] Parsers.MdParserLinksFull (16 ms)
+[----------] 1 test from Parsers (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (25 ms total)
+[  PASSED  ] 1 test.
+==2237== 
+==2237== HEAP SUMMARY:
+==2237==     in use at exit: 0 bytes in 0 blocks
+==2237==   total heap usage: 312 allocs, 312 frees, 122,320 bytes allocated
+==2237== 
+==2237== All heap blocks were freed -- no leaks are possible
+==2237== 
+==2237== For lists of detected and suppressed errors, rerun with: -s
+==2237== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Parsers.MdParserLinksFull" end time: Feb 13 07:00 UTC
+"Parsers.MdParserLinksFull" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/30 Testing: Parsers.MDWriteupCornerCases
+18/30 Test: Parsers.MDWriteupCornerCases
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests" "--gtest_filter=Parsers.MDWriteupCornerCases"
+Directory: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests
+"Parsers.MDWriteupCornerCases" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2238== Memcheck, a memory error detector
+==2238== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2238== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2238== Command: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests --gtest_filter=Parsers.MDWriteupCornerCases
+==2238== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Parsers.MDWriteupCornerCases
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Parsers
+[ RUN      ] Parsers.MDWriteupCornerCases
+[       OK ] Parsers.MDWriteupCornerCases (18 ms)
+[----------] 1 test from Parsers (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (27 ms total)
+[  PASSED  ] 1 test.
+==2238== 
+==2238== HEAP SUMMARY:
+==2238==     in use at exit: 0 bytes in 0 blocks
+==2238==   total heap usage: 330 allocs, 330 frees, 123,573 bytes allocated
+==2238== 
+==2238== All heap blocks were freed -- no leaks are possible
+==2238== 
+==2238== For lists of detected and suppressed errors, rerun with: -s
+==2238== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Parsers.MDWriteupCornerCases" end time: Feb 13 07:00 UTC
+"Parsers.MDWriteupCornerCases" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/30 Testing: Parsers.MDAnchorAnchor
+19/30 Test: Parsers.MDAnchorAnchor
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests" "--gtest_filter=Parsers.MDAnchorAnchor"
+Directory: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests
+"Parsers.MDAnchorAnchor" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2239== Memcheck, a memory error detector
+==2239== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2239== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2239== Command: /work/hw-alamgir/hw2/hw2_tests/mdparser_tests/mdparser_tests --gtest_filter=Parsers.MDAnchorAnchor
+==2239== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Parsers.MDAnchorAnchor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Parsers
+[ RUN      ] Parsers.MDAnchorAnchor
+[       OK ] Parsers.MDAnchorAnchor (17 ms)
+[----------] 1 test from Parsers (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+==2239== 
+==2239== HEAP SUMMARY:
+==2239==     in use at exit: 0 bytes in 0 blocks
+==2239==   total heap usage: 325 allocs, 325 frees, 123,258 bytes allocated
+==2239== 
+==2239== All heap blocks were freed -- no leaks are possible
+==2239== 
+==2239== For lists of detected and suppressed errors, rerun with: -s
+==2239== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Parsers.MDAnchorAnchor" end time: Feb 13 07:00 UTC
+"Parsers.MDAnchorAnchor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/30 Testing: Combiners.ANDCombiner
+20/30 Test: Combiners.ANDCombiner
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/combiner_tests/combiner_tests" "--gtest_filter=Combiners.ANDCombiner"
+Directory: /work/hw-alamgir/hw2/hw2_tests/combiner_tests
+"Combiners.ANDCombiner" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2240== Memcheck, a memory error detector
+==2240== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2240== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2240== Command: /work/hw-alamgir/hw2/hw2_tests/combiner_tests/combiner_tests --gtest_filter=Combiners.ANDCombiner
+==2240== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Combiners.ANDCombiner
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Combiners
+[ RUN      ] Combiners.ANDCombiner
+[       OK ] Combiners.ANDCombiner (17 ms)
+[----------] 1 test from Combiners (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+==2240== 
+==2240== HEAP SUMMARY:
+==2240==     in use at exit: 0 bytes in 0 blocks
+==2240==   total heap usage: 259 allocs, 259 frees, 119,895 bytes allocated
+==2240== 
+==2240== All heap blocks were freed -- no leaks are possible
+==2240== 
+==2240== For lists of detected and suppressed errors, rerun with: -s
+==2240== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Combiners.ANDCombiner" end time: Feb 13 07:00 UTC
+"Combiners.ANDCombiner" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/30 Testing: Combiners.ORCombiner
+21/30 Test: Combiners.ORCombiner
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/combiner_tests/combiner_tests" "--gtest_filter=Combiners.ORCombiner"
+Directory: /work/hw-alamgir/hw2/hw2_tests/combiner_tests
+"Combiners.ORCombiner" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2241== Memcheck, a memory error detector
+==2241== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2241== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2241== Command: /work/hw-alamgir/hw2/hw2_tests/combiner_tests/combiner_tests --gtest_filter=Combiners.ORCombiner
+==2241== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Combiners.ORCombiner
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Combiners
+[ RUN      ] Combiners.ORCombiner
+[       OK ] Combiners.ORCombiner (17 ms)
+[----------] 1 test from Combiners (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+==2241== 
+==2241== HEAP SUMMARY:
+==2241==     in use at exit: 0 bytes in 0 blocks
+==2241==   total heap usage: 267 allocs, 267 frees, 120,208 bytes allocated
+==2241== 
+==2241== All heap blocks were freed -- no leaks are possible
+==2241== 
+==2241== For lists of detected and suppressed errors, rerun with: -s
+==2241== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Combiners.ORCombiner" end time: Feb 13 07:00 UTC
+"Combiners.ORCombiner" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/30 Testing: Combiners.DiffCombiner
+22/30 Test: Combiners.DiffCombiner
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/combiner_tests/combiner_tests" "--gtest_filter=Combiners.DiffCombiner"
+Directory: /work/hw-alamgir/hw2/hw2_tests/combiner_tests
+"Combiners.DiffCombiner" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2242== Memcheck, a memory error detector
+==2242== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2242== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2242== Command: /work/hw-alamgir/hw2/hw2_tests/combiner_tests/combiner_tests --gtest_filter=Combiners.DiffCombiner
+==2242== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Combiners.DiffCombiner
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Combiners
+[ RUN      ] Combiners.DiffCombiner
+[       OK ] Combiners.DiffCombiner (17 ms)
+[----------] 1 test from Combiners (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+==2242== 
+==2242== HEAP SUMMARY:
+==2242==     in use at exit: 0 bytes in 0 blocks
+==2242==   total heap usage: 252 allocs, 252 frees, 119,622 bytes allocated
+==2242== 
+==2242== All heap blocks were freed -- no leaks are possible
+==2242== 
+==2242== For lists of detected and suppressed errors, rerun with: -s
+==2242== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Combiners.DiffCombiner" end time: Feb 13 07:00 UTC
+"Combiners.DiffCombiner" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/30 Testing: Cmdhandlers.AndHandler
+23/30 Test: Cmdhandlers.AndHandler
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests" "--gtest_filter=Cmdhandlers.AndHandler"
+Directory: /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests
+"Cmdhandlers.AndHandler" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2243== Memcheck, a memory error detector
+==2243== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2243== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2243== Command: /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests --gtest_filter=Cmdhandlers.AndHandler
+==2243== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Cmdhandlers.AndHandler
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Cmdhandlers
+[ RUN      ] Cmdhandlers.AndHandler
+Unrecognized command
+[       OK ] Cmdhandlers.AndHandler (6 ms)
+[----------] 1 test from Cmdhandlers (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (14 ms total)
+[  PASSED  ] 1 test.
+==2243== 
+==2243== HEAP SUMMARY:
+==2243==     in use at exit: 0 bytes in 0 blocks
+==2243==   total heap usage: 222 allocs, 222 frees, 117,758 bytes allocated
+==2243== 
+==2243== All heap blocks were freed -- no leaks are possible
+==2243== 
+==2243== For lists of detected and suppressed errors, rerun with: -s
+==2243== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Cmdhandlers.AndHandler" end time: Feb 13 07:00 UTC
+"Cmdhandlers.AndHandler" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/30 Testing: Cmdhandlers.OrHandler
+24/30 Test: Cmdhandlers.OrHandler
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests" "--gtest_filter=Cmdhandlers.OrHandler"
+Directory: /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests
+"Cmdhandlers.OrHandler" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2244== Memcheck, a memory error detector
+==2244== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2244== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2244== Command: /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests --gtest_filter=Cmdhandlers.OrHandler
+==2244== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Cmdhandlers.OrHandler
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Cmdhandlers
+[ RUN      ] Cmdhandlers.OrHandler
+Unrecognized command
+[       OK ] Cmdhandlers.OrHandler (6 ms)
+[----------] 1 test from Cmdhandlers (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (14 ms total)
+[  PASSED  ] 1 test.
+==2244== 
+==2244== HEAP SUMMARY:
+==2244==     in use at exit: 0 bytes in 0 blocks
+==2244==   total heap usage: 222 allocs, 222 frees, 117,751 bytes allocated
+==2244== 
+==2244== All heap blocks were freed -- no leaks are possible
+==2244== 
+==2244== For lists of detected and suppressed errors, rerun with: -s
+==2244== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Cmdhandlers.OrHandler" end time: Feb 13 07:00 UTC
+"Cmdhandlers.OrHandler" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/30 Testing: Cmdhandlers.DiffHandler
+25/30 Test: Cmdhandlers.DiffHandler
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests" "--gtest_filter=Cmdhandlers.DiffHandler"
+Directory: /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests
+"Cmdhandlers.DiffHandler" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2245== Memcheck, a memory error detector
+==2245== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2245== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2245== Command: /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests --gtest_filter=Cmdhandlers.DiffHandler
+==2245== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Cmdhandlers.DiffHandler
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Cmdhandlers
+[ RUN      ] Cmdhandlers.DiffHandler
+Unrecognized command
+[       OK ] Cmdhandlers.DiffHandler (6 ms)
+[----------] 1 test from Cmdhandlers (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (14 ms total)
+[  PASSED  ] 1 test.
+==2245== 
+==2245== HEAP SUMMARY:
+==2245==     in use at exit: 0 bytes in 0 blocks
+==2245==   total heap usage: 222 allocs, 222 frees, 117,765 bytes allocated
+==2245== 
+==2245== All heap blocks were freed -- no leaks are possible
+==2245== 
+==2245== For lists of detected and suppressed errors, rerun with: -s
+==2245== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Cmdhandlers.DiffHandler" end time: Feb 13 07:00 UTC
+"Cmdhandlers.DiffHandler" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/30 Testing: Cmdhandlers.IncomingHandler
+26/30 Test: Cmdhandlers.IncomingHandler
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests" "--gtest_filter=Cmdhandlers.IncomingHandler"
+Directory: /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests
+"Cmdhandlers.IncomingHandler" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2246== Memcheck, a memory error detector
+==2246== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2246== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2246== Command: /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests --gtest_filter=Cmdhandlers.IncomingHandler
+==2246== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Cmdhandlers.IncomingHandler
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Cmdhandlers
+[ RUN      ] Cmdhandlers.IncomingHandler
+unknown file: Failure
+C++ exception with description "No parser registered for this extension" thrown in the test body.
+[  FAILED  ] Cmdhandlers.IncomingHandler (30 ms)
+[----------] 1 test from Cmdhandlers (32 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (40 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Cmdhandlers.IncomingHandler
+
+ 1 FAILED TEST
+==2246== 
+==2246== HEAP SUMMARY:
+==2246==     in use at exit: 304 bytes in 5 blocks
+==2246==   total heap usage: 254 allocs, 249 frees, 140,144 bytes allocated
+==2246== 
+==2246== 304 (144 direct, 160 indirect) bytes in 1 blocks are definitely lost in loss record 5 of 5
+==2246==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2246==    by 0x11217B: searchEngFactory() (handler_tests.cpp:15)
+==2246==    by 0x112E6B: Cmdhandlers_IncomingHandler_Test::TestBody() (handler_tests.cpp:49)
+==2246==    by 0x14F86F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2246==    by 0x1439E7: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2246==    by 0x143B3B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2246==    by 0x143C17: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2246==    by 0x144163: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2246==    by 0x14FE07: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2246==    by 0x1443AB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2246==    by 0x111BC7: main (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2246== 
+==2246== LEAK SUMMARY:
+==2246==    definitely lost: 144 bytes in 1 blocks
+==2246==    indirectly lost: 160 bytes in 4 blocks
+==2246==      possibly lost: 0 bytes in 0 blocks
+==2246==    still reachable: 0 bytes in 0 blocks
+==2246==         suppressed: 0 bytes in 0 blocks
+==2246== 
+==2246== For lists of detected and suppressed errors, rerun with: -s
+==2246== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Failed.
+"Cmdhandlers.IncomingHandler" end time: Feb 13 07:00 UTC
+"Cmdhandlers.IncomingHandler" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/30 Testing: Cmdhandlers.OutgoingHandler
+27/30 Test: Cmdhandlers.OutgoingHandler
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests" "--gtest_filter=Cmdhandlers.OutgoingHandler"
+Directory: /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests
+"Cmdhandlers.OutgoingHandler" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+==2247== Memcheck, a memory error detector
+==2247== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2247== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2247== Command: /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests --gtest_filter=Cmdhandlers.OutgoingHandler
+==2247== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Cmdhandlers.OutgoingHandler
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Cmdhandlers
+[ RUN      ] Cmdhandlers.OutgoingHandler
+unknown file: Failure
+C++ exception with description "No parser registered for this extension" thrown in the test body.
+[  FAILED  ] Cmdhandlers.OutgoingHandler (32 ms)
+[----------] 1 test from Cmdhandlers (33 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (41 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Cmdhandlers.OutgoingHandler
+
+ 1 FAILED TEST
+==2247== 
+==2247== HEAP SUMMARY:
+==2247==     in use at exit: 304 bytes in 5 blocks
+==2247==   total heap usage: 254 allocs, 249 frees, 140,144 bytes allocated
+==2247== 
+==2247== 304 (144 direct, 160 indirect) bytes in 1 blocks are definitely lost in loss record 5 of 5
+==2247==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==2247==    by 0x11217B: searchEngFactory() (handler_tests.cpp:15)
+==2247==    by 0x11343B: Cmdhandlers_OutgoingHandler_Test::TestBody() (handler_tests.cpp:62)
+==2247==    by 0x14F86F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2247==    by 0x1439E7: testing::Test::Run() (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2247==    by 0x143B3B: testing::TestInfo::Run() (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2247==    by 0x143C17: testing::TestSuite::Run() (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2247==    by 0x144163: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2247==    by 0x14FE07: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2247==    by 0x1443AB: testing::UnitTest::Run() (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2247==    by 0x111BC7: main (in /work/hw-alamgir/hw2/hw2_tests/cmdhandler_tests/cmdhandler_tests)
+==2247== 
+==2247== LEAK SUMMARY:
+==2247==    definitely lost: 144 bytes in 1 blocks
+==2247==    indirectly lost: 160 bytes in 4 blocks
+==2247==      possibly lost: 0 bytes in 0 blocks
+==2247==    still reachable: 0 bytes in 0 blocks
+==2247==         suppressed: 0 bytes in 0 blocks
+==2247== 
+==2247== For lists of detected and suppressed errors, rerun with: -s
+==2247== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Failed.
+"Cmdhandlers.OutgoingHandler" end time: Feb 13 07:00 UTC
+"Cmdhandlers.OutgoingHandler" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/30 Testing: SearchShell.Query1
+28/30 Test: SearchShell.Query1
+Command: "/work/hw-alamgir/hw2/hw2_tests/shell_tests/shell_tests" "--gtest_filter=SearchShell.Query1"
+Directory: /work/hw-alamgir/hw2/hw2_tests/shell_tests
+"SearchShell.Query1" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchShell.Query1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchShell
+[ RUN      ] SearchShell.Query1
+Current working directory: /work/hw-alamgir/hw2/hw2_tests/shell_tests
+Student hw directory: /work/hw-alamgir/hw2
+No parser registered for this extension
+/work/hw-alamgir/hw2/hw2_tests/shell_tests/shell_tests.cpp:31: Failure
+Expected equality of these values:
+  returnCode
+    Which is: 256
+  0
+/work/hw-alamgir/hw2/search-shell ./test-small/index.in ./test-small/shell-query1.in ./shell-query1.out exit status is 256 (expected 0)
+Attempting to compare ./shell-query1.out to ./test-small/shell-query1.in
+/work/hw-alamgir/hw2/hw2_tests/shell_tests/shell_tests.cpp:56: Failure
+Value of: res
+  Actual: false (Couldn't open output file./shell-query1.out)
+Expected: true
+[  FAILED  ] SearchShell.Query1 (7 ms)
+[----------] 1 test from SearchShell (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (7 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchShell.Query1
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"SearchShell.Query1" end time: Feb 13 07:00 UTC
+"SearchShell.Query1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/30 Testing: SearchShell.Query2
+29/30 Test: SearchShell.Query2
+Command: "/work/hw-alamgir/hw2/hw2_tests/shell_tests/shell_tests" "--gtest_filter=SearchShell.Query2"
+Directory: /work/hw-alamgir/hw2/hw2_tests/shell_tests
+"SearchShell.Query2" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchShell.Query2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchShell
+[ RUN      ] SearchShell.Query2
+Current working directory: /work/hw-alamgir/hw2/hw2_tests/shell_tests
+Student hw directory: /work/hw-alamgir/hw2
+No parser registered for this extension
+/work/hw-alamgir/hw2/hw2_tests/shell_tests/shell_tests.cpp:31: Failure
+Expected equality of these values:
+  returnCode
+    Which is: 256
+  0
+/work/hw-alamgir/hw2/search-shell ./test-small/index.in ./test-small/shell-query2.in ./shell-query2.out exit status is 256 (expected 0)
+Attempting to compare ./shell-query2.out to ./test-small/shell-query2.in
+/work/hw-alamgir/hw2/hw2_tests/shell_tests/shell_tests.cpp:64: Failure
+Value of: res
+  Actual: false (Couldn't open output file./shell-query2.out)
+Expected: true
+[  FAILED  ] SearchShell.Query2 (6 ms)
+[----------] 1 test from SearchShell (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (7 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchShell.Query2
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"SearchShell.Query2" end time: Feb 13 07:00 UTC
+"SearchShell.Query2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/30 Testing: SearchShell.Query3
+30/30 Test: SearchShell.Query3
+Command: "/work/hw-alamgir/hw2/hw2_tests/shell_tests/shell_tests" "--gtest_filter=SearchShell.Query3"
+Directory: /work/hw-alamgir/hw2/hw2_tests/shell_tests
+"SearchShell.Query3" start time: Feb 13 07:00 UTC
+Output:
+----------------------------------------------------------
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = SearchShell.Query3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SearchShell
+[ RUN      ] SearchShell.Query3
+Current working directory: /work/hw-alamgir/hw2/hw2_tests/shell_tests
+Student hw directory: /work/hw-alamgir/hw2
+No parser registered for this extension
+/work/hw-alamgir/hw2/hw2_tests/shell_tests/shell_tests.cpp:31: Failure
+Expected equality of these values:
+  returnCode
+    Which is: 256
+  0
+/work/hw-alamgir/hw2/search-shell ./test-small/index.in ./test-small/shell-query3.in ./shell-query3.out exit status is 256 (expected 0)
+Attempting to compare ./shell-query3.out to ./test-small/shell-query3.in
+/work/hw-alamgir/hw2/hw2_tests/shell_tests/shell_tests.cpp:72: Failure
+Value of: res
+  Actual: false (Couldn't open output file./shell-query3.out)
+Expected: true
+[  FAILED  ] SearchShell.Query3 (7 ms)
+[----------] 1 test from SearchShell (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (7 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SearchShell.Query3
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"SearchShell.Query3" end time: Feb 13 07:00 UTC
+"SearchShell.Query3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 13 07:00 UTC

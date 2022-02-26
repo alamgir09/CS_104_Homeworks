@@ -1,0 +1,45 @@
+SearchEng.ParserRegistration 0 0
+SearchEng.ReadPageMultipleTimes 0 0
+SearchEng.ANDCombiner 0 0
+SearchEng.ORCombiner 0 0
+SearchEng.DiffCombiner 0 0
+SearchEng.RetrievePage 0 0
+SearchEng.LinkCornerCases 0 0
+SearchEng.SameLink 0 0
+SearchEng.DisplayPage 0 0
+Parsers.MdParserSpecialStart 3 0.143046
+Parsers.MdParserSpecialEnd 3 0.140095
+Parsers.MdParserSpecialMiddle 3 0.140386
+Parsers.MdParserTextFull 3 0.140386
+Parsers.MdParserLinksSepStart 3 0.140085
+Parsers.MdParserLinksSepEnd 3 0.140948
+Parsers.MdParserLinksSepMiddle 3 0.140834
+Parsers.MdParserLinksFull 3 0.13992
+Parsers.MDWriteupCornerCases 3 0.140978
+Parsers.MDAnchorAnchor 3 0.140833
+Combiners.ANDCombiner 3 0.138971
+Combiners.ORCombiner 3 0.139014
+Combiners.DiffCombiner 3 0.138786
+Cmdhandlers.AndHandler 3 0.136242
+Cmdhandlers.OrHandler 3 0.136925
+Cmdhandlers.DiffHandler 3 0.136759
+Cmdhandlers.IncomingHandler 0 0
+Cmdhandlers.OutgoingHandler 0 0
+SearchShell.Query1 0 0
+SearchShell.Query2 0 0
+SearchShell.Query3 0 0
+---
+SearchEng.ParserRegistration
+SearchEng.ReadPageMultipleTimes
+SearchEng.ANDCombiner
+SearchEng.ORCombiner
+SearchEng.DiffCombiner
+SearchEng.RetrievePage
+SearchEng.LinkCornerCases
+SearchEng.SameLink
+SearchEng.DisplayPage
+Cmdhandlers.IncomingHandler
+Cmdhandlers.OutgoingHandler
+SearchShell.Query1
+SearchShell.Query2
+SearchShell.Query3
