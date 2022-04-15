@@ -1,0 +1,15 @@
+1:Wordle.Empty
+2:Wordle.NoSolutions
+3:Wordle.OneLetterUnconstrained
+4:Wordle.OneLetterConstrained
+5:Wordle.TwoLetterUnconstrained
+6:Wordle.TwoLetterConstrained
+7:Wordle.ThreeLetterFull
+8:Wordle.OneOption
+9:Wordle.Nominal1
+10:Wordle.Nominal2
+11:Wordle.Nominal3
+12:Wordle.Long
+13:Schedule.SimpleSol1
+18:Schedule.Nominal1
+21:Schedule.Nominal2

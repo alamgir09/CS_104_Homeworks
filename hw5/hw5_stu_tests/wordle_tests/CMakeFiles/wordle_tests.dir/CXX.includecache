@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/work/hw-alamgir/hw5/dict-eng.h
+set
+-
+string
+-
+
+/work/hw-alamgir/hw5/hw5_stu_tests/wordle_tests/wordle-tests.cpp
+wordle.h
+/work/hw-alamgir/hw5/hw5_stu_tests/wordle_tests/wordle.h
+dict-eng.h
+/work/hw-alamgir/hw5/hw5_stu_tests/wordle_tests/dict-eng.h
+gtest/gtest.h
+-
+set
+-
+iostream
+-
+sstream
+-
+algorithm
+-
+
+/work/hw-alamgir/hw5/wordle.h
+set
+-
+string
+-
+vector
+-
+

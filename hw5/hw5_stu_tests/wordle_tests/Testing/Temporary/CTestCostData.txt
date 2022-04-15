@@ -1,0 +1,18 @@
+Wordle.Empty 12 0.240067
+Wordle.NoSolutions 12 0.237572
+Wordle.OneLetterUnconstrained 5 0.677581
+Wordle.OneLetterConstrained 5 0.567817
+Wordle.TwoLetterUnconstrained 5 3.4887
+Wordle.TwoLetterConstrained 4 0
+Wordle.ThreeLetterFull 5 0.560521
+Wordle.OneOption 5 0.56863
+Wordle.Nominal1 4 0
+Wordle.Nominal2 4 0
+Wordle.Nominal3 4 0
+Wordle.Long 0 0
+---
+Wordle.TwoLetterConstrained
+Wordle.Nominal1
+Wordle.Nominal2
+Wordle.Nominal3
+Wordle.Long

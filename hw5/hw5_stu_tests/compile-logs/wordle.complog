@@ -1,0 +1,9 @@
+Scanning dependencies of target hw5_wordle
+[ 33%] Building CXX object wordle_tests/CMakeFiles/hw5_wordle.dir/work/hw-alamgir/hw5/wordle.cpp.o
+/work/hw-alamgir/hw5/wordle.cpp: In function 'std::set<std::__cxx11::basic_string<char> > wordle(const string&, const string&, const std::set<std::__cxx11::basic_string<char> >&)':
+/work/hw-alamgir/hw5/wordle.cpp:25:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   25 | }
+      | ^
+[ 66%] Building CXX object wordle_tests/CMakeFiles/hw5_wordle.dir/work/hw-alamgir/hw5/dict-eng.cpp.o
+[100%] Linking CXX static library libhw5_wordle.a
+[100%] Built target hw5_wordle
