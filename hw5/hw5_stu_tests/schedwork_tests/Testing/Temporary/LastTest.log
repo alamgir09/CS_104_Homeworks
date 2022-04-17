@@ -1,0 +1,614 @@
+Start testing: Apr 17 05:56 UTC
+----------------------------------------------------------
+1/9 Testing: Schedule.SimpleSol1
+1/9 Test: Schedule.SimpleSol1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests" "--gtest_filter=Schedule.SimpleSol1"
+Directory: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests
+"Schedule.SimpleSol1" start time: Apr 17 05:56 UTC
+Output:
+----------------------------------------------------------
+==6762== Memcheck, a memory error detector
+==6762== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6762== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6762== Command: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests --gtest_filter=Schedule.SimpleSol1
+==6762== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Schedule.SimpleSol1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Schedule
+[ RUN      ] Schedule.SimpleSol1
+the sched[0][0] is 4294967295
+the row size of sched is 3
+the column size of sched is 1
+==6762== Invalid read of size 4
+==6762==    at 0x119C50: schedule(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > > const&, unsigned long, unsigned long, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >&) (schedwork.cpp:72)
+==6762==    by 0x111797: runAndVerifySolution(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > > const&, unsigned long, unsigned long, bool) (schedwork-tests.cpp:46)
+==6762==    by 0x11205B: Schedule_SimpleSol1_Test::TestBody() (schedwork-tests.cpp:129)
+==6762==    by 0x14BA9F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6762==    by 0x13FC1F: testing::Test::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6762==    by 0x13FD73: testing::TestInfo::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6762==    by 0x13FE4F: testing::TestSuite::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6762==    by 0x14039B: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6762==    by 0x14C037: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6762==    by 0x1405E3: testing::UnitTest::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6762==    by 0x110F37: main (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6762==  Address 0x4ce0904 is 0 bytes after a block of size 4 alloc'd
+==6762==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==6762==    by 0x1186B3: __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) (new_allocator.h:114)
+==6762==    by 0x11829F: std::allocator_traits<std::allocator<unsigned int> >::allocate(std::allocator<unsigned int>&, unsigned long) (alloc_traits.h:444)
+==6762==    by 0x117CFB: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) (stl_vector.h:343)
+==6762==    by 0x117443: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_create_storage(unsigned long) (stl_vector.h:358)
+==6762==    by 0x116D03: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(unsigned long, std::allocator<unsigned int> const&) (stl_vector.h:302)
+==6762==    by 0x11BA7F: std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_vector.h:552)
+==6762==    by 0x11B6B3: void std::_Construct<std::vector<unsigned int, std::allocator<unsigned int> >, std::vector<unsigned int, std::allocator<unsigned int> > const&>(std::vector<unsigned int, std::allocator<unsigned int> >*, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_construct.h:75)
+==6762==    by 0x11B31F: std::vector<unsigned int, std::allocator<unsigned int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_uninitialized.h:222)
+==6762==    by 0x11B06F: std::vector<unsigned int, std::allocator<unsigned int> >* std::uninitialized_fill_n<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_uninitialized.h:273)
+==6762==    by 0x11AE3F: std::vector<unsigned int, std::allocator<unsigned int> >* std::__uninitialized_fill_n_a<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> >, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > >&) (stl_uninitialized.h:384)
+==6762==    by 0x11AA93: std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >::_M_fill_initialize(unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_vector.h:1593)
+==6762== 
+The thing at position [1][1] is 0
+The avail[0][0] is 1
+/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork-tests.cpp:130: Failure
+Value of: result
+  Actual: false (For availability:
+1 
+1 
+1 
+
+Error in schedule:
+4294967295 
+4294967295 
+4294967295 
+
+Mismatch with boolean return result (expected: 1 / actual: 0)
+)
+Expected: true
+[  FAILED  ] Schedule.SimpleSol1 (27 ms)
+[----------] 1 test from Schedule (30 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (37 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Schedule.SimpleSol1
+
+ 1 FAILED TEST
+==6762== 
+==6762== HEAP SUMMARY:
+==6762==     in use at exit: 0 bytes in 0 blocks
+==6762==   total heap usage: 327 allocs, 327 frees, 131,980 bytes allocated
+==6762== 
+==6762== All heap blocks were freed -- no leaks are possible
+==6762== 
+==6762== For lists of detected and suppressed errors, rerun with: -s
+==6762== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.48 sec
+----------------------------------------------------------
+Test Failed.
+"Schedule.SimpleSol1" end time: Apr 17 05:56 UTC
+"Schedule.SimpleSol1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/9 Testing: Schedule.SimpleNoSolMaxShifts
+2/9 Test: Schedule.SimpleNoSolMaxShifts
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests" "--gtest_filter=Schedule.SimpleNoSolMaxShifts"
+Directory: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests
+"Schedule.SimpleNoSolMaxShifts" start time: Apr 17 05:56 UTC
+Output:
+----------------------------------------------------------
+==6763== Memcheck, a memory error detector
+==6763== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6763== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6763== Command: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests --gtest_filter=Schedule.SimpleNoSolMaxShifts
+==6763== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Schedule.SimpleNoSolMaxShifts
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Schedule
+[ RUN      ] Schedule.SimpleNoSolMaxShifts
+the sched[0][0] is 4294967295
+the row size of sched is 3
+the column size of sched is 1
+==6763== Invalid read of size 4
+==6763==    at 0x119C50: schedule(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > > const&, unsigned long, unsigned long, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >&) (schedwork.cpp:72)
+==6763==    by 0x111797: runAndVerifySolution(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > > const&, unsigned long, unsigned long, bool) (schedwork-tests.cpp:46)
+==6763==    by 0x1123A3: Schedule_SimpleNoSolMaxShifts_Test::TestBody() (schedwork-tests.cpp:145)
+==6763==    by 0x14BA9F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6763==    by 0x13FC1F: testing::Test::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6763==    by 0x13FD73: testing::TestInfo::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6763==    by 0x13FE4F: testing::TestSuite::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6763==    by 0x14039B: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6763==    by 0x14C037: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6763==    by 0x1405E3: testing::UnitTest::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6763==    by 0x110F37: main (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6763==  Address 0x4ce0924 is 0 bytes after a block of size 4 alloc'd
+==6763==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==6763==    by 0x1186B3: __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) (new_allocator.h:114)
+==6763==    by 0x11829F: std::allocator_traits<std::allocator<unsigned int> >::allocate(std::allocator<unsigned int>&, unsigned long) (alloc_traits.h:444)
+==6763==    by 0x117CFB: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) (stl_vector.h:343)
+==6763==    by 0x117443: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_create_storage(unsigned long) (stl_vector.h:358)
+==6763==    by 0x116D03: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(unsigned long, std::allocator<unsigned int> const&) (stl_vector.h:302)
+==6763==    by 0x11BA7F: std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_vector.h:552)
+==6763==    by 0x11B6B3: void std::_Construct<std::vector<unsigned int, std::allocator<unsigned int> >, std::vector<unsigned int, std::allocator<unsigned int> > const&>(std::vector<unsigned int, std::allocator<unsigned int> >*, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_construct.h:75)
+==6763==    by 0x11B31F: std::vector<unsigned int, std::allocator<unsigned int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_uninitialized.h:222)
+==6763==    by 0x11B06F: std::vector<unsigned int, std::allocator<unsigned int> >* std::uninitialized_fill_n<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_uninitialized.h:273)
+==6763==    by 0x11AE3F: std::vector<unsigned int, std::allocator<unsigned int> >* std::__uninitialized_fill_n_a<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> >, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > >&) (stl_uninitialized.h:384)
+==6763==    by 0x11AA93: std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >::_M_fill_initialize(unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_vector.h:1593)
+==6763== 
+The thing at position [1][1] is 0
+The avail[0][0] is 1
+[       OK ] Schedule.SimpleNoSolMaxShifts (18 ms)
+[----------] 1 test from Schedule (21 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (28 ms total)
+[  PASSED  ] 1 test.
+==6763== 
+==6763== HEAP SUMMARY:
+==6763==     in use at exit: 0 bytes in 0 blocks
+==6763==   total heap usage: 283 allocs, 283 frees, 121,094 bytes allocated
+==6763== 
+==6763== All heap blocks were freed -- no leaks are possible
+==6763== 
+==6763== For lists of detected and suppressed errors, rerun with: -s
+==6763== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Schedule.SimpleNoSolMaxShifts" end time: Apr 17 05:56 UTC
+"Schedule.SimpleNoSolMaxShifts" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/9 Testing: Schedule.SimpleNoSolNoAvail1
+3/9 Test: Schedule.SimpleNoSolNoAvail1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests" "--gtest_filter=Schedule.SimpleNoSolNoAvail1"
+Directory: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests
+"Schedule.SimpleNoSolNoAvail1" start time: Apr 17 05:56 UTC
+Output:
+----------------------------------------------------------
+==6764== Memcheck, a memory error detector
+==6764== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6764== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6764== Command: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests --gtest_filter=Schedule.SimpleNoSolNoAvail1
+==6764== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Schedule.SimpleNoSolNoAvail1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Schedule
+[ RUN      ] Schedule.SimpleNoSolNoAvail1
+the sched[0][0] is 4294967295
+the row size of sched is 3
+the column size of sched is 1
+==6764== Invalid read of size 4
+==6764==    at 0x119C50: schedule(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > > const&, unsigned long, unsigned long, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >&) (schedwork.cpp:72)
+==6764==    by 0x111797: runAndVerifySolution(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > > const&, unsigned long, unsigned long, bool) (schedwork-tests.cpp:46)
+==6764==    by 0x1126E7: Schedule_SimpleNoSolNoAvail1_Test::TestBody() (schedwork-tests.cpp:161)
+==6764==    by 0x14BA9F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6764==    by 0x13FC1F: testing::Test::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6764==    by 0x13FD73: testing::TestInfo::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6764==    by 0x13FE4F: testing::TestSuite::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6764==    by 0x14039B: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6764==    by 0x14C037: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6764==    by 0x1405E3: testing::UnitTest::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6764==    by 0x110F37: main (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6764==  Address 0x4ce0924 is 0 bytes after a block of size 4 alloc'd
+==6764==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==6764==    by 0x1186B3: __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) (new_allocator.h:114)
+==6764==    by 0x11829F: std::allocator_traits<std::allocator<unsigned int> >::allocate(std::allocator<unsigned int>&, unsigned long) (alloc_traits.h:444)
+==6764==    by 0x117CFB: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) (stl_vector.h:343)
+==6764==    by 0x117443: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_create_storage(unsigned long) (stl_vector.h:358)
+==6764==    by 0x116D03: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(unsigned long, std::allocator<unsigned int> const&) (stl_vector.h:302)
+==6764==    by 0x11BA7F: std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_vector.h:552)
+==6764==    by 0x11B6B3: void std::_Construct<std::vector<unsigned int, std::allocator<unsigned int> >, std::vector<unsigned int, std::allocator<unsigned int> > const&>(std::vector<unsigned int, std::allocator<unsigned int> >*, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_construct.h:75)
+==6764==    by 0x11B31F: std::vector<unsigned int, std::allocator<unsigned int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_uninitialized.h:222)
+==6764==    by 0x11B06F: std::vector<unsigned int, std::allocator<unsigned int> >* std::uninitialized_fill_n<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_uninitialized.h:273)
+==6764==    by 0x11AE3F: std::vector<unsigned int, std::allocator<unsigned int> >* std::__uninitialized_fill_n_a<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> >, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > >&) (stl_uninitialized.h:384)
+==6764==    by 0x11AA93: std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >::_M_fill_initialize(unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_vector.h:1593)
+==6764== 
+The thing at position [1][1] is 0
+The avail[0][0] is 0
+[       OK ] Schedule.SimpleNoSolNoAvail1 (19 ms)
+[----------] 1 test from Schedule (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (27 ms total)
+[  PASSED  ] 1 test.
+==6764== 
+==6764== HEAP SUMMARY:
+==6764==     in use at exit: 0 bytes in 0 blocks
+==6764==   total heap usage: 283 allocs, 283 frees, 121,087 bytes allocated
+==6764== 
+==6764== All heap blocks were freed -- no leaks are possible
+==6764== 
+==6764== For lists of detected and suppressed errors, rerun with: -s
+==6764== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Schedule.SimpleNoSolNoAvail1" end time: Apr 17 05:56 UTC
+"Schedule.SimpleNoSolNoAvail1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/9 Testing: Schedule.SimpleNoSolNoAvail2
+4/9 Test: Schedule.SimpleNoSolNoAvail2
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests" "--gtest_filter=Schedule.SimpleNoSolNoAvail2"
+Directory: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests
+"Schedule.SimpleNoSolNoAvail2" start time: Apr 17 05:56 UTC
+Output:
+----------------------------------------------------------
+==6765== Memcheck, a memory error detector
+==6765== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6765== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6765== Command: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests --gtest_filter=Schedule.SimpleNoSolNoAvail2
+==6765== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Schedule.SimpleNoSolNoAvail2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Schedule
+[ RUN      ] Schedule.SimpleNoSolNoAvail2
+the sched[0][0] is 4294967295
+the row size of sched is 3
+the column size of sched is 1
+==6765== Invalid read of size 4
+==6765==    at 0x119C50: schedule(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > > const&, unsigned long, unsigned long, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >&) (schedwork.cpp:72)
+==6765==    by 0x111797: runAndVerifySolution(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > > const&, unsigned long, unsigned long, bool) (schedwork-tests.cpp:46)
+==6765==    by 0x112A2B: Schedule_SimpleNoSolNoAvail2_Test::TestBody() (schedwork-tests.cpp:177)
+==6765==    by 0x14BA9F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6765==    by 0x13FC1F: testing::Test::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6765==    by 0x13FD73: testing::TestInfo::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6765==    by 0x13FE4F: testing::TestSuite::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6765==    by 0x14039B: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6765==    by 0x14C037: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6765==    by 0x1405E3: testing::UnitTest::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6765==    by 0x110F37: main (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6765==  Address 0x4ce0924 is 0 bytes after a block of size 4 alloc'd
+==6765==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==6765==    by 0x1186B3: __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) (new_allocator.h:114)
+==6765==    by 0x11829F: std::allocator_traits<std::allocator<unsigned int> >::allocate(std::allocator<unsigned int>&, unsigned long) (alloc_traits.h:444)
+==6765==    by 0x117CFB: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) (stl_vector.h:343)
+==6765==    by 0x117443: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_create_storage(unsigned long) (stl_vector.h:358)
+==6765==    by 0x116D03: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(unsigned long, std::allocator<unsigned int> const&) (stl_vector.h:302)
+==6765==    by 0x11BA7F: std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_vector.h:552)
+==6765==    by 0x11B6B3: void std::_Construct<std::vector<unsigned int, std::allocator<unsigned int> >, std::vector<unsigned int, std::allocator<unsigned int> > const&>(std::vector<unsigned int, std::allocator<unsigned int> >*, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_construct.h:75)
+==6765==    by 0x11B31F: std::vector<unsigned int, std::allocator<unsigned int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_uninitialized.h:222)
+==6765==    by 0x11B06F: std::vector<unsigned int, std::allocator<unsigned int> >* std::uninitialized_fill_n<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_uninitialized.h:273)
+==6765==    by 0x11AE3F: std::vector<unsigned int, std::allocator<unsigned int> >* std::__uninitialized_fill_n_a<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> >, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > >&) (stl_uninitialized.h:384)
+==6765==    by 0x11AA93: std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >::_M_fill_initialize(unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_vector.h:1593)
+==6765== 
+The thing at position [1][1] is 0
+The avail[0][0] is 1
+[       OK ] Schedule.SimpleNoSolNoAvail2 (19 ms)
+[----------] 1 test from Schedule (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (27 ms total)
+[  PASSED  ] 1 test.
+==6765== 
+==6765== HEAP SUMMARY:
+==6765==     in use at exit: 0 bytes in 0 blocks
+==6765==   total heap usage: 283 allocs, 283 frees, 121,087 bytes allocated
+==6765== 
+==6765== All heap blocks were freed -- no leaks are possible
+==6765== 
+==6765== For lists of detected and suppressed errors, rerun with: -s
+==6765== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Schedule.SimpleNoSolNoAvail2" end time: Apr 17 05:56 UTC
+"Schedule.SimpleNoSolNoAvail2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/9 Testing: Schedule.SimpleNoSolNoAvail3
+5/9 Test: Schedule.SimpleNoSolNoAvail3
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests" "--gtest_filter=Schedule.SimpleNoSolNoAvail3"
+Directory: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests
+"Schedule.SimpleNoSolNoAvail3" start time: Apr 17 05:56 UTC
+Output:
+----------------------------------------------------------
+==6766== Memcheck, a memory error detector
+==6766== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6766== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6766== Command: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests --gtest_filter=Schedule.SimpleNoSolNoAvail3
+==6766== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Schedule.SimpleNoSolNoAvail3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Schedule
+[ RUN      ] Schedule.SimpleNoSolNoAvail3
+the sched[0][0] is 4294967295
+the row size of sched is 3
+the column size of sched is 1
+==6766== Invalid read of size 4
+==6766==    at 0x119C50: schedule(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > > const&, unsigned long, unsigned long, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >&) (schedwork.cpp:72)
+==6766==    by 0x111797: runAndVerifySolution(std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > > const&, unsigned long, unsigned long, bool) (schedwork-tests.cpp:46)
+==6766==    by 0x112D6F: Schedule_SimpleNoSolNoAvail3_Test::TestBody() (schedwork-tests.cpp:193)
+==6766==    by 0x14BA9F: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6766==    by 0x13FC1F: testing::Test::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6766==    by 0x13FD73: testing::TestInfo::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6766==    by 0x13FE4F: testing::TestSuite::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6766==    by 0x14039B: testing::internal::UnitTestImpl::RunAllTests() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6766==    by 0x14C037: bool testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*) (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6766==    by 0x1405E3: testing::UnitTest::Run() (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6766==    by 0x110F37: main (in /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests)
+==6766==  Address 0x4ce0924 is 0 bytes after a block of size 4 alloc'd
+==6766==    at 0x484A3C4: operator new(unsigned long) (in /usr/lib/aarch64-linux-gnu/valgrind/vgpreload_memcheck-arm64-linux.so)
+==6766==    by 0x1186B3: __gnu_cxx::new_allocator<unsigned int>::allocate(unsigned long, void const*) (new_allocator.h:114)
+==6766==    by 0x11829F: std::allocator_traits<std::allocator<unsigned int> >::allocate(std::allocator<unsigned int>&, unsigned long) (alloc_traits.h:444)
+==6766==    by 0x117CFB: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_allocate(unsigned long) (stl_vector.h:343)
+==6766==    by 0x117443: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_M_create_storage(unsigned long) (stl_vector.h:358)
+==6766==    by 0x116D03: std::_Vector_base<unsigned int, std::allocator<unsigned int> >::_Vector_base(unsigned long, std::allocator<unsigned int> const&) (stl_vector.h:302)
+==6766==    by 0x11BA7F: std::vector<unsigned int, std::allocator<unsigned int> >::vector(std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_vector.h:552)
+==6766==    by 0x11B6B3: void std::_Construct<std::vector<unsigned int, std::allocator<unsigned int> >, std::vector<unsigned int, std::allocator<unsigned int> > const&>(std::vector<unsigned int, std::allocator<unsigned int> >*, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_construct.h:75)
+==6766==    by 0x11B31F: std::vector<unsigned int, std::allocator<unsigned int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_uninitialized.h:222)
+==6766==    by 0x11B06F: std::vector<unsigned int, std::allocator<unsigned int> >* std::uninitialized_fill_n<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_uninitialized.h:273)
+==6766==    by 0x11AE3F: std::vector<unsigned int, std::allocator<unsigned int> >* std::__uninitialized_fill_n_a<std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> >, std::vector<unsigned int, std::allocator<unsigned int> > >(std::vector<unsigned int, std::allocator<unsigned int> >*, unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > >&) (stl_uninitialized.h:384)
+==6766==    by 0x11AA93: std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >::_M_fill_initialize(unsigned long, std::vector<unsigned int, std::allocator<unsigned int> > const&) (stl_vector.h:1593)
+==6766== 
+The thing at position [1][1] is 0
+The avail[0][0] is 1
+[       OK ] Schedule.SimpleNoSolNoAvail3 (20 ms)
+[----------] 1 test from Schedule (22 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (30 ms total)
+[  PASSED  ] 1 test.
+==6766== 
+==6766== HEAP SUMMARY:
+==6766==     in use at exit: 0 bytes in 0 blocks
+==6766==   total heap usage: 283 allocs, 283 frees, 121,087 bytes allocated
+==6766== 
+==6766== All heap blocks were freed -- no leaks are possible
+==6766== 
+==6766== For lists of detected and suppressed errors, rerun with: -s
+==6766== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Passed.
+"Schedule.SimpleNoSolNoAvail3" end time: Apr 17 05:56 UTC
+"Schedule.SimpleNoSolNoAvail3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/9 Testing: Schedule.Nominal1
+6/9 Test: Schedule.Nominal1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests" "--gtest_filter=Schedule.Nominal1"
+Directory: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests
+"Schedule.Nominal1" start time: Apr 17 05:56 UTC
+Output:
+----------------------------------------------------------
+==6767== Memcheck, a memory error detector
+==6767== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6767== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6767== Command: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests --gtest_filter=Schedule.Nominal1
+==6767== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Schedule.Nominal1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Schedule
+[ RUN      ] Schedule.Nominal1
+the sched[0][0] is 4294967295
+the row size of sched is 4
+the column size of sched is 2
+The thing at position [1][1] is 4294967295
+The avail[0][0] is 1
+/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork-tests.cpp:211: Failure
+Value of: result
+  Actual: false (For availability:
+1 1 1 1 
+1 0 1 0 
+1 1 0 1 
+1 0 0 1 
+
+Error in schedule:
+4294967295 4294967295 
+4294967295 4294967295 
+4294967295 4294967295 
+4294967295 4294967295 
+
+Mismatch with boolean return result (expected: 1 / actual: 0)
+)
+Expected: true
+[  FAILED  ] Schedule.Nominal1 (26 ms)
+[----------] 1 test from Schedule (28 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (35 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Schedule.Nominal1
+
+ 1 FAILED TEST
+==6767== 
+==6767== HEAP SUMMARY:
+==6767==     in use at exit: 0 bytes in 0 blocks
+==6767==   total heap usage: 331 allocs, 331 frees, 134,106 bytes allocated
+==6767== 
+==6767== All heap blocks were freed -- no leaks are possible
+==6767== 
+==6767== For lists of detected and suppressed errors, rerun with: -s
+==6767== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Failed.
+"Schedule.Nominal1" end time: Apr 17 05:56 UTC
+"Schedule.Nominal1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/9 Testing: Schedule.Nominal1NoSol1
+7/9 Test: Schedule.Nominal1NoSol1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests" "--gtest_filter=Schedule.Nominal1NoSol1"
+Directory: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests
+"Schedule.Nominal1NoSol1" start time: Apr 17 05:56 UTC
+Output:
+----------------------------------------------------------
+==6768== Memcheck, a memory error detector
+==6768== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6768== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6768== Command: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests --gtest_filter=Schedule.Nominal1NoSol1
+==6768== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Schedule.Nominal1NoSol1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Schedule
+[ RUN      ] Schedule.Nominal1NoSol1
+the sched[0][0] is 4294967295
+the row size of sched is 4
+the column size of sched is 3
+The thing at position [1][1] is 4294967295
+The avail[0][0] is 1
+[       OK ] Schedule.Nominal1NoSol1 (19 ms)
+[----------] 1 test from Schedule (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (27 ms total)
+[  PASSED  ] 1 test.
+==6768== 
+==6768== HEAP SUMMARY:
+==6768==     in use at exit: 0 bytes in 0 blocks
+==6768==   total heap usage: 287 allocs, 287 frees, 121,236 bytes allocated
+==6768== 
+==6768== All heap blocks were freed -- no leaks are possible
+==6768== 
+==6768== For lists of detected and suppressed errors, rerun with: -s
+==6768== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Schedule.Nominal1NoSol1" end time: Apr 17 05:56 UTC
+"Schedule.Nominal1NoSol1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/9 Testing: Schedule.Nominal1NoSol2
+8/9 Test: Schedule.Nominal1NoSol2
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests" "--gtest_filter=Schedule.Nominal1NoSol2"
+Directory: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests
+"Schedule.Nominal1NoSol2" start time: Apr 17 05:56 UTC
+Output:
+----------------------------------------------------------
+==6769== Memcheck, a memory error detector
+==6769== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6769== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6769== Command: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests --gtest_filter=Schedule.Nominal1NoSol2
+==6769== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Schedule.Nominal1NoSol2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Schedule
+[ RUN      ] Schedule.Nominal1NoSol2
+the sched[0][0] is 4294967295
+the row size of sched is 4
+the column size of sched is 2
+The thing at position [1][1] is 4294967295
+The avail[0][0] is 1
+[       OK ] Schedule.Nominal1NoSol2 (19 ms)
+[----------] 1 test from Schedule (21 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (29 ms total)
+[  PASSED  ] 1 test.
+==6769== 
+==6769== HEAP SUMMARY:
+==6769==     in use at exit: 0 bytes in 0 blocks
+==6769==   total heap usage: 287 allocs, 287 frees, 121,200 bytes allocated
+==6769== 
+==6769== All heap blocks were freed -- no leaks are possible
+==6769== 
+==6769== For lists of detected and suppressed errors, rerun with: -s
+==6769== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Passed.
+"Schedule.Nominal1NoSol2" end time: Apr 17 05:56 UTC
+"Schedule.Nominal1NoSol2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/9 Testing: Schedule.Nominal2
+9/9 Test: Schedule.Nominal2
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests" "--gtest_filter=Schedule.Nominal2"
+Directory: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests
+"Schedule.Nominal2" start time: Apr 17 05:56 UTC
+Output:
+----------------------------------------------------------
+==6770== Memcheck, a memory error detector
+==6770== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6770== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6770== Command: /work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork_tests --gtest_filter=Schedule.Nominal2
+==6770== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Schedule.Nominal2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Schedule
+[ RUN      ] Schedule.Nominal2
+the sched[0][0] is 4294967295
+the row size of sched is 7
+the column size of sched is 3
+The thing at position [1][1] is 4294967295
+The avail[0][0] is 0
+/work/hw-alamgir/hw5/hw5_stu_tests/schedwork_tests/schedwork-tests.cpp:274: Failure
+Value of: result
+  Actual: false (For availability:
+0 1 0 1 1 0 1 
+0 1 1 0 1 0 0 
+1 0 0 1 1 0 0 
+1 1 0 0 0 0 1 
+1 0 1 0 1 1 0 
+1 1 1 0 1 1 1 
+1 0 0 1 1 1 0 
+
+Error in schedule:
+4294967295 4294967295 4294967295 
+4294967295 4294967295 4294967295 
+4294967295 4294967295 4294967295 
+4294967295 4294967295 4294967295 
+4294967295 4294967295 4294967295 
+4294967295 4294967295 4294967295 
+4294967295 4294967295 4294967295 
+
+Mismatch with boolean return result (expected: 1 / actual: 0)
+)
+Expected: true
+[  FAILED  ] Schedule.Nominal2 (28 ms)
+[----------] 1 test from Schedule (29 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (36 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Schedule.Nominal2
+
+ 1 FAILED TEST
+==6770== 
+==6770== HEAP SUMMARY:
+==6770==     in use at exit: 0 bytes in 0 blocks
+==6770==   total heap usage: 344 allocs, 344 frees, 140,711 bytes allocated
+==6770== 
+==6770== All heap blocks were freed -- no leaks are possible
+==6770== 
+==6770== For lists of detected and suppressed errors, rerun with: -s
+==6770== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.44 sec
+----------------------------------------------------------
+Test Failed.
+"Schedule.Nominal2" end time: Apr 17 05:56 UTC
+"Schedule.Nominal2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 17 05:56 UTC

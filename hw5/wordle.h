@@ -22,7 +22,9 @@ std::set<std::string> wordle(
     const std::set<std::string>& dict);
 
 // Helper Functions below
-void traversal(std::vector<char> floatVec, const std::set<std::string>& dict, std::set<std::string> &generated, long unsigned int index, std::string combination, std::string& letters);
+
+//void traversal(std::vector<char> floatVec, const std::set<std::string>& dict, std::set<std::string> &generated, long unsigned int index, std::string combination, std::string& letters, long unsigned int& dashes);
 // int inWord(std::string& combination, const std::string& floating);
-long unsigned int dashesPresent(std::string& combination);
+//long unsigned int dashesPresent(std::string& combination);
+
 #endif

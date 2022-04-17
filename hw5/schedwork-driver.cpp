@@ -32,6 +32,7 @@ int main()
     else
     {
         cout << "No solution found!" << endl;
+        printSchedule(sched);
     }
     return 0;
 }

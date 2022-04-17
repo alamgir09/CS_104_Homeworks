@@ -6,20 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/work/hw-alamgir/hw5/dict-eng.cpp
-stdexcept
--
-cctype
--
-iostream
--
-fstream
--
-set
--
-string
--
-
 /work/hw-alamgir/hw5/dict-eng.h
 set
 -

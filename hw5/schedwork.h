@@ -6,7 +6,7 @@
 // type for the ID of a worker
 typedef unsigned int Worker_T;
 // n-by-k Matrix of each of the k workers' availability over an n-day period
-typedef std::vector<std::vector<bool>> AvailabilityMatrix; // the >> might need to be changed
+typedef std::vector<std::vector<bool> > AvailabilityMatrix; // the >> might need to be changed
 
 // n-by-d matrix with the d worker IDs who are scheduled 
 // to work on each of the n days

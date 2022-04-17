@@ -11,8 +11,7 @@ using namespace std;
 
 
 // Add prototypes of helper functions here
-void traversal(std::vector<char> floatVec, const std::set<std::string>& dict, std::set<std::string> &generated, long unsigned int index, std::string combination, std::string& letters);
-// int inWord(std::string& combination, const std::string& floating);
+void traversal(std::vector<char> floatVec, const std::set<std::string>& dict, std::set<std::string> &generated, long unsigned int index, std::string combination, std::string& letters, long unsigned int& dashes);
 long unsigned int dashesPresent(std::string& combination);
 
 // use backtracking, and check cases as you go through problem
@@ -32,13 +31,23 @@ std::set<std::string> wordle(
     std::string letters = "abcdefghijklmnopqrstuvwxyz";
     // to allow us to delete letters from string and use find function, we must import floating into a vector of chars
     std::vector<char> floatVec;
+    //std::multiset<char> floatSet;
+    /* the multiset version
+    for (long unsigned int i = 0; i < floating.size();i++)
+    {
+        floatSet.insert(floating[i]);
+    }
+    */
+    ///*
     for (long unsigned int i = 0; i < floating.size(); i++)
     {
         floatVec.push_back(floating[i]);
     }
+    //*/
     long unsigned int index = 0;
+    long unsigned int dashes = dashesPresent(combination);
     if (combination.empty()) return generated;
-    traversal(floatVec, dict, generated, index, combination, letters);
+    traversal(floatVec, dict, generated, index, combination, letters, dashes);
     return generated;
 }
 
@@ -60,14 +69,14 @@ long unsigned int dashesPresent(std::string& combination)
 
 
 // does the recursion for me, generating combinations
-void traversal(std::vector<char> floatVec, const std::set<std::string>& dict, std::set<std::string> &generated, long unsigned int index, std::string combination, std::string& letters)
+void traversal(std::vector<char> floatVec, const std::set<std::string>& dict, std::set<std::string> &generated, long unsigned int index, std::string combination, std::string& letters, long unsigned int& dashes)
 {
-    long unsigned int dashes = dashesPresent(combination);
+    dashes = dashesPresent(combination);
     // quick check if this position can even be modified, if not then go to next index
     if (combination[index] != '-')
     {
-        index++;
-        traversal(floatVec, dict, generated, index, combination, letters);
+        //index++;
+        traversal(floatVec, dict, generated, index+1, combination, letters, dashes);
         return;
     }
     // BC
@@ -78,7 +87,6 @@ void traversal(std::vector<char> floatVec, const std::set<std::string>& dict, st
         if (dict.find(combination) != dict.end())
         {
             generated.insert(combination);
-            //std::cout << "the word generated " << combination << std::endl;
         }
         return;
     // check if this position of the word should even be changed
@@ -87,29 +95,44 @@ void traversal(std::vector<char> floatVec, const std::set<std::string>& dict, st
     else if (dashes == floatVec.size())
     {
         // only go through characters left in floating
+        ///*
         for (long unsigned int i = 0; i < floatVec.size(); i++)
         {
-            std::vector<char> temp = floatVec;
-            combination[index] = floatVec[i];
-            if (temp.size() != 0)
-            {
-                std::vector<char>::iterator it = temp.begin() + i;
-                if (it != temp.end())
-                {
-                    temp.erase(it);
-                }
-            }
-            traversal(temp, dict, generated, index+1, combination, letters);
+            char character = floatVec[i];
+            combination[index] = character;
+            std::vector<char>::iterator it = floatVec.begin() + i;
+            floatVec.erase(it);
+            traversal(floatVec, dict, generated, index+1, combination, letters, dashes);
+            floatVec.insert(floatVec.begin() + i, character);
         }
+        //*/
+        /* the multiset version
+        bool erased = false;
+        for (std::multiset<char>::iterator it = floatVec.begin(); it != floatVec.end(); ++it)
+        {
+            char character = *it;
+            combination[index] = character;
+            if (it != floatVec.end())
+            {
+                floatVec.erase(it);
+                erased = true;
+            }
+            traversal(floatVec, dict, generated, index+1, combination, letters, dashes);
+            if (erased) floatVec.insert(it, character);
+            erased = false;
+        }
+        */
         return;
     }
     // go through all characters since more blank spaces than hintsUsed
-    /*
+    
     else if (dashes > floatVec.size())
     {
+        ///*
         for (long unsigned int i = 0; i < 26; i++)
         {
             std::vector<char> temp = floatVec;
+            //char character = letters[i];
             combination[index] = letters[i];
             // remove this character from floating, if it exists in floating
             if (temp.size() != 0)
@@ -120,21 +143,58 @@ void traversal(std::vector<char> floatVec, const std::set<std::string>& dict, st
                     temp.erase(it);
                 }
             }
-            traversal(temp, dict, generated, index+1, combination, letters);
+            traversal(temp, dict, generated, index+1, combination, letters, dashes);
+            
         }
+        //*/
+        // multiset version
+        /*
+
+        for (long unsigned int i = 0; i < 26; i++)
+        {
+            combination[index] = letters[i];
+            std::multiset<char> temp = floatVec;
+            // remove this character from floating, if it exists in floating
+            if (temp.size() != 0)
+            {
+                std::multiset<char>::iterator it = temp.find(letters[i]);
+                if (it != temp.end())
+                {
+                    temp.erase(it);
+                }
+            }
+            traversal(temp, dict, generated, index+1, combination, letters, dashes);
+        }
+        */
         return;
     }
-    */
-   
+}
+// -- ab
+// dashes < floatVec
+// try floating characters, dashes < floatVec, use only floatVec
+
+
+
+
+
+
+
+
+
+
+
+/*
     else if (dashes > floatVec.size())
     {
         for (long unsigned int i = 0; i < floatVec.size(); i++)
         {
-            std::vector<char> temp = floatVec;
-            combination[index] = floatVec[i];
-            std::vector<char>::iterator it = temp.begin() + i;
-            temp.erase(it);
-            traversal(temp, dict, generated, index+1, combination, letters);
+            //std::vector<char> temp = floatVec;
+            char character = floatVec[i];
+            combination[index] = character;
+            std::vector<char>::iterator it = floatVec.begin() + i;
+            floatVec.erase(it);
+            traversal(floatVec, dict, generated, index+1, combination, letters);
+            floatVec.insert(floatVec.begin() + i, character);
         }
         for (long unsigned int i = 0; i < 26; i++)
         {
@@ -147,8 +207,4 @@ void traversal(std::vector<char> floatVec, const std::set<std::string>& dict, st
         }
         return;
     }
-
-}
-// -- ab
-// dashes < floatVec
-// try floating characters, dashes < floatVec, use only floatVec
+    */
