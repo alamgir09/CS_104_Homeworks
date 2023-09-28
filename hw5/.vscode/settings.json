@@ -72,5 +72,6 @@
         "unordered_map": "cpp",
         "utility": "cpp",
         "*.in": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }

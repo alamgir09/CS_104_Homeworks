@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/work/hw-alamgir/hw6/graphiso.cpp
+iostream
+-
+sstream
+-
+graphiso.h
+/work/hw-alamgir/hw6/graphiso.h
+
+/work/hw-alamgir/hw6/graphiso.h
+string
+-
+vector
+-
+map
+-
+set
+-
+ht.h
+/work/hw-alamgir/hw6/ht.h
+
+/work/hw-alamgir/hw6/ht.h
+vector
+-
+iostream
+-
+cmath
+-
+

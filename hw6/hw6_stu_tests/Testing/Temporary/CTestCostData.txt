@@ -1,0 +1,56 @@
+HashTable.LinearProberFailureCheck 8 0.0597586
+HashTable.DoubleHashProberSequenceCheck 5 0.0829977
+HashTable.DoubleHashProberFailureCheck 5 0.0821655
+HashTable.Constructor 7 0.0591794
+HashTable.Insert 3 0
+HashTable.InsertDuplicate 4 0
+HashTable.InsertCollision 0 0
+HashTable.InsertResize 0 0
+HashTable.InsertResizeFactor 0 0
+HashTable.Find 0 0
+HashTable.FindCollisions 0 0
+HashTable.Remove 3 0.140806
+HashTable.RemoveNothing 0 0
+HashTable.RemoveCollisions 0 0
+HashTable.TestSize 4 0
+HashTable.TestEmpty 3 0.13788
+HashTable.LogicErrorTest 0 0
+HashTable.InsertDoubleHashProbeCollision 0 0
+HashTable.InsertStressTestResizeOneLoadFactor 0 0
+HashTable.InsertStressTestResizeNotOneLoadFactor 0 0
+HashTable.StressInsertRemoveResizeLinear 0 0
+HashFunc.ExampleOne 8 0.0551426
+HashFunc.ExampleTwo 8 0.0503419
+HashFunc.ExampleThree 8 0.050397
+HashFunc.LargestInputString 8 0.0501982
+HashFunc.StringEmpty 8 0.0501007
+HashFunc.String1 8 0.0503149
+HashFunc.String7 8 0.0503911
+HashFunc.String12 8 0.050254
+HashFunc.String13 8 0.050874
+HashFunc.StringCase 8 0.0505976
+HashFunc.TestRandomize 8 0.685419
+GraphIso.Graph1True 0 0
+GraphIso.Graph2True 0 0
+GraphIso.Graph3False 7 0.0626063
+GraphIso.Graph4aTrue 0 0
+GraphIso.Graph4bFalse 7 0.0611083
+---
+HashTable.Insert
+HashTable.InsertDuplicate
+HashTable.InsertCollision
+HashTable.InsertResize
+HashTable.InsertResizeFactor
+HashTable.Find
+HashTable.FindCollisions
+HashTable.RemoveNothing
+HashTable.RemoveCollisions
+HashTable.TestSize
+HashTable.LogicErrorTest
+HashTable.InsertDoubleHashProbeCollision
+HashTable.InsertStressTestResizeOneLoadFactor
+HashTable.InsertStressTestResizeNotOneLoadFactor
+HashTable.StressInsertRemoveResizeLinear
+GraphIso.Graph1True
+GraphIso.Graph2True
+GraphIso.Graph4aTrue

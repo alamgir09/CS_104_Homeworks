@@ -1,0 +1,14 @@
+Stack.BasicString 2 0.21325
+Stack.RandomInt 2 0.610427
+Stack.TopEmpty 29 0.0141615
+Stack.OneElementPush 29 0.0138045
+Stack.FiveElementPush 29 0.0136734
+Stack.OneElementPop 29 0.0137787
+Stack.FiveElementPop 29 0.0140811
+Stack.PopEmpty 29 0.0141776
+Stack.EmptyThenRefill 29 0.0141407
+Stack.PopThenAdd 29 0.0142764
+StackStress.50x50Elements 29 0.0138108
+StackStress.5x1000Elements 29 0.0137137
+StackStress.2x10000Elements 29 0.0136837
+---

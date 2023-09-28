@@ -1,0 +1,33 @@
+BST.ConstructionDestruction 82 0.00679022
+BSTInsert.JustRoot 54 0.00829833
+BSTInsert.DoubleInsertLeft 25 0.017395
+BSTInsert.DoubleInsertRight 25 0.0169956
+BSTInsert.InsertZigZigLeft 25 0.0171925
+BSTInsert.InsertZigZigRight 23 0.0186553
+BSTInsert.InsertZigZagLeft 23 0.0187968
+BSTInsert.InsertZigZagRight 25 0.0172351
+BSTInsert.7Elements 23 0.0192032
+BSTClear.Clear 73 0.00625958
+BSTFind.InvalidFind 63 0.00678084
+BSTInsert.Duplicates 23 0.0187024
+BSTInsert.BasicRandom 23 0.0189571
+BSTInsert.Random50x30ele 23 0.0305231
+BSTInsert.Random3x5000ele 23 0.0672069
+BSTRemove.EmptyTree 76 0.00566349
+BSTRemove.NodeMismatch 25 0.0171111
+BSTRemove.SingleRemove 73 0.00595705
+BSTRemove.RightChildRemove 23 0.0188132
+BSTRemove.LeftChildRemove 25 0.0170943
+BSTRemove.TwoChildrenRemove_3Node 23 0.0186703
+BSTRemove.TwoChildrenRemove_4Node 23 0.0186718
+BSTRemove.Random50x30ele 23 0.0280216
+BSTStress.InsertRemove 23 0.020966
+BSTStress.Remove 23 0.0194313
+BSTBalance.EmptyTree 19 0.0221672
+BSTBalance.OneNode 3 0.141645
+BSTBalance.3Nodes_Unbalanced 27 0.0158521
+BSTBalance.3Nodes_Balanced 3 0.14304
+BSTBalance.UnbalancedSubtree 22 0
+BSTBalance.Random50x30ele 25 0.0237574
+---
+BSTBalance.UnbalancedSubtree

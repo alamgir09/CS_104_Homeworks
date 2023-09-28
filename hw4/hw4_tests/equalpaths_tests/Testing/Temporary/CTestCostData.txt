@@ -1,0 +1,14 @@
+EqualPaths.Empty 9 0.0467692
+EqualPaths.RootOnly 8 0.0511746
+EqualPaths.RootLeft 4 0.100992
+EqualPaths.RootRight 4 0.102381
+EqualPaths.Full1 9 0.0447578
+EqualPaths.TrueTest1 8 0.0503304
+EqualPaths.TrueTest2 8 0.0512108
+EqualPaths.TrueTest3 8 0.0510319
+EqualPaths.TrueTest4 9 0.0454965
+EqualPaths.FalseTest1 8 0.0519464
+EqualPaths.FalseTest2 9 0.0453845
+EqualPaths.FalseTest3 4 0
+---
+EqualPaths.FalseTest3

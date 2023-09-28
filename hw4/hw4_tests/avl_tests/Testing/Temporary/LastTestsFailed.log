@@ -1,0 +1,13 @@
+5:AVLInsert.InsertZigZigLeft
+6:AVLInsert.InsertZigZigRight
+7:AVLInsert.InsertZigZagLeft
+8:AVLInsert.InsertZigZagRight
+9:AVLInsert.7Elements
+11:AVLInsert.Duplicates
+12:AVLInsert.Random50x30ele
+13:AVLInsert.Random3x5000ele
+17:AVLRemove.RightChildRemove
+18:AVLRemove.LeftChildRemove
+21:AVLRemove.Random50x30ele
+22:AVLStress.InsertRemove
+23:AVLStress.Remove

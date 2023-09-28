@@ -1,0 +1,1887 @@
+Start testing: May 24 16:30 UTC
+----------------------------------------------------------
+1/60 Testing: Pivot.Nominal
+1/60 Test: Pivot.Nominal
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/llrec_tests/llrec_tests" "--gtest_filter=Pivot.Nominal"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/llrec_tests
+"Pivot.Nominal" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==75== Memcheck, a memory error detector
+==75== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==75== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==75== Command: /work/hw-alamgir/hw3/hw3_stu_tests/llrec_tests/llrec_tests --gtest_filter=Pivot.Nominal
+==75== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Pivot.Nominal
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Pivot
+[ RUN      ] Pivot.Nominal
+[       OK ] Pivot.Nominal (6 ms)
+[----------] 1 test from Pivot (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==75== 
+==75== HEAP SUMMARY:
+==75==     in use at exit: 0 bytes in 0 blocks
+==75==   total heap usage: 198 allocs, 198 frees, 115,742 bytes allocated
+==75== 
+==75== All heap blocks were freed -- no leaks are possible
+==75== 
+==75== For lists of detected and suppressed errors, rerun with: -s
+==75== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.48 sec
+----------------------------------------------------------
+Test Passed.
+"Pivot.Nominal" end time: May 24 16:30 UTC
+"Pivot.Nominal" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/60 Testing: Filter.Size3_nF_F_nF
+2/60 Test: Filter.Size3_nF_F_nF
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/llrec_tests/llrec_tests" "--gtest_filter=Filter.Size3_nF_F_nF"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/llrec_tests
+"Filter.Size3_nF_F_nF" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==76== Memcheck, a memory error detector
+==76== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==76== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==76== Command: /work/hw-alamgir/hw3/hw3_stu_tests/llrec_tests/llrec_tests --gtest_filter=Filter.Size3_nF_F_nF
+==76== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Filter.Size3_nF_F_nF
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Filter
+[ RUN      ] Filter.Size3_nF_F_nF
+Head's value is 5
+[       OK ] Filter.Size3_nF_F_nF (6 ms)
+[----------] 1 test from Filter (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==76== 
+==76== HEAP SUMMARY:
+==76==     in use at exit: 0 bytes in 0 blocks
+==76==   total heap usage: 200 allocs, 200 frees, 115,883 bytes allocated
+==76== 
+==76== All heap blocks were freed -- no leaks are possible
+==76== 
+==76== For lists of detected and suppressed errors, rerun with: -s
+==76== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"Filter.Size3_nF_F_nF" end time: May 24 16:30 UTC
+"Filter.Size3_nF_F_nF" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/60 Testing: Stack.BasicString
+3/60 Test: Stack.BasicString
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.BasicString"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.BasicString" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==77== Memcheck, a memory error detector
+==77== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==77== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==77== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.BasicString
+==77== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.BasicString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Stack
+[ RUN      ] Stack.BasicString
+[       OK ] Stack.BasicString (18 ms)
+[----------] 1 test from Stack (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (26 ms total)
+[  PASSED  ] 1 test.
+==77== 
+==77== HEAP SUMMARY:
+==77==     in use at exit: 0 bytes in 0 blocks
+==77==   total heap usage: 200 allocs, 200 frees, 116,242 bytes allocated
+==77== 
+==77== All heap blocks were freed -- no leaks are possible
+==77== 
+==77== For lists of detected and suppressed errors, rerun with: -s
+==77== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.48 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.BasicString" end time: May 24 16:30 UTC
+"Stack.BasicString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/60 Testing: Stack.RandomInt
+4/60 Test: Stack.RandomInt
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.RandomInt"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.RandomInt" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==78== Memcheck, a memory error detector
+==78== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==78== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==78== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.RandomInt
+==78== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.RandomInt
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Stack
+[ RUN      ] Stack.RandomInt
+[       OK ] Stack.RandomInt (849 ms)
+[----------] 1 test from Stack (852 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (859 ms total)
+[  PASSED  ] 1 test.
+==78== 
+==78== HEAP SUMMARY:
+==78==     in use at exit: 0 bytes in 0 blocks
+==78==   total heap usage: 21,234 allocs, 21,234 frees, 1,077,116 bytes allocated
+==78== 
+==78== All heap blocks were freed -- no leaks are possible
+==78== 
+==78== For lists of detected and suppressed errors, rerun with: -s
+==78== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   1.23 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.RandomInt" end time: May 24 16:30 UTC
+"Stack.RandomInt" time elapsed: 00:00:01
+----------------------------------------------------------
+
+5/60 Testing: Stack.TopEmpty
+5/60 Test: Stack.TopEmpty
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.TopEmpty"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.TopEmpty" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==79== Memcheck, a memory error detector
+==79== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==79== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==79== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.TopEmpty
+==79== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.TopEmpty
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (4 ms total)
+[  PASSED  ] 0 tests.
+==79== 
+==79== HEAP SUMMARY:
+==79==     in use at exit: 0 bytes in 0 blocks
+==79==   total heap usage: 181 allocs, 181 frees, 113,527 bytes allocated
+==79== 
+==79== All heap blocks were freed -- no leaks are possible
+==79== 
+==79== For lists of detected and suppressed errors, rerun with: -s
+==79== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.TopEmpty" end time: May 24 16:30 UTC
+"Stack.TopEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/60 Testing: Stack.OneElementPush
+6/60 Test: Stack.OneElementPush
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.OneElementPush"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.OneElementPush" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==80== Memcheck, a memory error detector
+==80== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==80== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==80== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.OneElementPush
+==80== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.OneElementPush
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==80== 
+==80== HEAP SUMMARY:
+==80==     in use at exit: 0 bytes in 0 blocks
+==80==   total heap usage: 184 allocs, 184 frees, 113,660 bytes allocated
+==80== 
+==80== All heap blocks were freed -- no leaks are possible
+==80== 
+==80== For lists of detected and suppressed errors, rerun with: -s
+==80== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.OneElementPush" end time: May 24 16:30 UTC
+"Stack.OneElementPush" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/60 Testing: Stack.FiveElementPush
+7/60 Test: Stack.FiveElementPush
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.FiveElementPush"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.FiveElementPush" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==81== Memcheck, a memory error detector
+==81== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==81== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==81== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.FiveElementPush
+==81== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.FiveElementPush
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==81== 
+==81== HEAP SUMMARY:
+==81==     in use at exit: 0 bytes in 0 blocks
+==81==   total heap usage: 184 allocs, 184 frees, 113,667 bytes allocated
+==81== 
+==81== All heap blocks were freed -- no leaks are possible
+==81== 
+==81== For lists of detected and suppressed errors, rerun with: -s
+==81== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.FiveElementPush" end time: May 24 16:30 UTC
+"Stack.FiveElementPush" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/60 Testing: Stack.OneElementPop
+8/60 Test: Stack.OneElementPop
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.OneElementPop"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.OneElementPop" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==82== Memcheck, a memory error detector
+==82== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==82== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==82== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.OneElementPop
+==82== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.OneElementPop
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (4 ms total)
+[  PASSED  ] 0 tests.
+==82== 
+==82== HEAP SUMMARY:
+==82==     in use at exit: 0 bytes in 0 blocks
+==82==   total heap usage: 184 allocs, 184 frees, 113,653 bytes allocated
+==82== 
+==82== All heap blocks were freed -- no leaks are possible
+==82== 
+==82== For lists of detected and suppressed errors, rerun with: -s
+==82== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.OneElementPop" end time: May 24 16:30 UTC
+"Stack.OneElementPop" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/60 Testing: Stack.FiveElementPop
+9/60 Test: Stack.FiveElementPop
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.FiveElementPop"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.FiveElementPop" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==83== Memcheck, a memory error detector
+==83== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==83== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==83== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.FiveElementPop
+==83== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.FiveElementPop
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==83== 
+==83== HEAP SUMMARY:
+==83==     in use at exit: 0 bytes in 0 blocks
+==83==   total heap usage: 184 allocs, 184 frees, 113,660 bytes allocated
+==83== 
+==83== All heap blocks were freed -- no leaks are possible
+==83== 
+==83== For lists of detected and suppressed errors, rerun with: -s
+==83== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.FiveElementPop" end time: May 24 16:30 UTC
+"Stack.FiveElementPop" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/60 Testing: Stack.PopEmpty
+10/60 Test: Stack.PopEmpty
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.PopEmpty"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.PopEmpty" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==84== Memcheck, a memory error detector
+==84== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==84== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==84== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.PopEmpty
+==84== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.PopEmpty
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==84== 
+==84== HEAP SUMMARY:
+==84==     in use at exit: 0 bytes in 0 blocks
+==84==   total heap usage: 181 allocs, 181 frees, 113,527 bytes allocated
+==84== 
+==84== All heap blocks were freed -- no leaks are possible
+==84== 
+==84== For lists of detected and suppressed errors, rerun with: -s
+==84== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.PopEmpty" end time: May 24 16:30 UTC
+"Stack.PopEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/60 Testing: Stack.EmptyThenRefill
+11/60 Test: Stack.EmptyThenRefill
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.EmptyThenRefill"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.EmptyThenRefill" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==85== Memcheck, a memory error detector
+==85== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==85== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==85== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.EmptyThenRefill
+==85== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.EmptyThenRefill
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (4 ms total)
+[  PASSED  ] 0 tests.
+==85== 
+==85== HEAP SUMMARY:
+==85==     in use at exit: 0 bytes in 0 blocks
+==85==   total heap usage: 184 allocs, 184 frees, 113,667 bytes allocated
+==85== 
+==85== All heap blocks were freed -- no leaks are possible
+==85== 
+==85== For lists of detected and suppressed errors, rerun with: -s
+==85== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.EmptyThenRefill" end time: May 24 16:30 UTC
+"Stack.EmptyThenRefill" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/60 Testing: Stack.PopThenAdd
+12/60 Test: Stack.PopThenAdd
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.PopThenAdd"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.PopThenAdd" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==86== Memcheck, a memory error detector
+==86== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==86== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==86== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.PopThenAdd
+==86== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.PopThenAdd
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (4 ms total)
+[  PASSED  ] 0 tests.
+==86== 
+==86== HEAP SUMMARY:
+==86==     in use at exit: 0 bytes in 0 blocks
+==86==   total heap usage: 184 allocs, 184 frees, 113,632 bytes allocated
+==86== 
+==86== All heap blocks were freed -- no leaks are possible
+==86== 
+==86== For lists of detected and suppressed errors, rerun with: -s
+==86== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.PopThenAdd" end time: May 24 16:30 UTC
+"Stack.PopThenAdd" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/60 Testing: StackStress.50x50Elements
+13/60 Test: StackStress.50x50Elements
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=StackStress.50x50Elements"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"StackStress.50x50Elements" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==87== Memcheck, a memory error detector
+==87== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==87== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==87== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=StackStress.50x50Elements
+==87== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = StackStress.50x50Elements
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==87== 
+==87== HEAP SUMMARY:
+==87==     in use at exit: 0 bytes in 0 blocks
+==87==   total heap usage: 184 allocs, 184 frees, 113,695 bytes allocated
+==87== 
+==87== All heap blocks were freed -- no leaks are possible
+==87== 
+==87== For lists of detected and suppressed errors, rerun with: -s
+==87== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"StackStress.50x50Elements" end time: May 24 16:30 UTC
+"StackStress.50x50Elements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/60 Testing: StackStress.5x1000Elements
+14/60 Test: StackStress.5x1000Elements
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=StackStress.5x1000Elements"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"StackStress.5x1000Elements" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==88== Memcheck, a memory error detector
+==88== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==88== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==88== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=StackStress.5x1000Elements
+==88== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = StackStress.5x1000Elements
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (4 ms total)
+[  PASSED  ] 0 tests.
+==88== 
+==88== HEAP SUMMARY:
+==88==     in use at exit: 0 bytes in 0 blocks
+==88==   total heap usage: 184 allocs, 184 frees, 113,702 bytes allocated
+==88== 
+==88== All heap blocks were freed -- no leaks are possible
+==88== 
+==88== For lists of detected and suppressed errors, rerun with: -s
+==88== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"StackStress.5x1000Elements" end time: May 24 16:30 UTC
+"StackStress.5x1000Elements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/60 Testing: StackStress.2x10000Elements
+15/60 Test: StackStress.2x10000Elements
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=StackStress.2x10000Elements"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"StackStress.2x10000Elements" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==89== Memcheck, a memory error detector
+==89== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==89== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==89== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=StackStress.2x10000Elements
+==89== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = StackStress.2x10000Elements
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==89== 
+==89== HEAP SUMMARY:
+==89==     in use at exit: 0 bytes in 0 blocks
+==89==   total heap usage: 184 allocs, 184 frees, 113,709 bytes allocated
+==89== 
+==89== All heap blocks were freed -- no leaks are possible
+==89== 
+==89== For lists of detected and suppressed errors, rerun with: -s
+==89== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"StackStress.2x10000Elements" end time: May 24 16:30 UTC
+"StackStress.2x10000Elements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/60 Testing: HeapTest.ConstructionDestruction
+16/60 Test: HeapTest.ConstructionDestruction
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ConstructionDestruction"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.ConstructionDestruction" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==90== Memcheck, a memory error detector
+==90== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==90== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==90== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.ConstructionDestruction
+==90== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.ConstructionDestruction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.ConstructionDestruction
+[       OK ] HeapTest.ConstructionDestruction (2 ms)
+[----------] 1 test from HeapTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (12 ms total)
+[  PASSED  ] 1 test.
+==90== 
+==90== HEAP SUMMARY:
+==90==     in use at exit: 0 bytes in 0 blocks
+==90==   total heap usage: 457 allocs, 457 frees, 132,084 bytes allocated
+==90== 
+==90== All heap blocks were freed -- no leaks are possible
+==90== 
+==90== For lists of detected and suppressed errors, rerun with: -s
+==90== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.48 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.ConstructionDestruction" end time: May 24 16:30 UTC
+"HeapTest.ConstructionDestruction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/60 Testing: HeapTest.InitiallyEmpty
+17/60 Test: HeapTest.InitiallyEmpty
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.InitiallyEmpty"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.InitiallyEmpty" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==91== Memcheck, a memory error detector
+==91== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==91== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==91== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.InitiallyEmpty
+==91== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.InitiallyEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.InitiallyEmpty
+[       OK ] HeapTest.InitiallyEmpty (3 ms)
+[----------] 1 test from HeapTest (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (11 ms total)
+[  PASSED  ] 1 test.
+==91== 
+==91== HEAP SUMMARY:
+==91==     in use at exit: 0 bytes in 0 blocks
+==91==   total heap usage: 457 allocs, 457 frees, 131,967 bytes allocated
+==91== 
+==91== All heap blocks were freed -- no leaks are possible
+==91== 
+==91== For lists of detected and suppressed errors, rerun with: -s
+==91== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.InitiallyEmpty" end time: May 24 16:30 UTC
+"HeapTest.InitiallyEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/60 Testing: HeapTest.EmptyTopException
+18/60 Test: HeapTest.EmptyTopException
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.EmptyTopException"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.EmptyTopException" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==92== Memcheck, a memory error detector
+==92== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==92== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==92== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.EmptyTopException
+==92== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.EmptyTopException
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.EmptyTopException
+[       OK ] HeapTest.EmptyTopException (12 ms)
+[----------] 1 test from HeapTest (15 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (22 ms total)
+[  PASSED  ] 1 test.
+==92== 
+==92== HEAP SUMMARY:
+==92==     in use at exit: 0 bytes in 0 blocks
+==92==   total heap usage: 459 allocs, 459 frees, 132,162 bytes allocated
+==92== 
+==92== All heap blocks were freed -- no leaks are possible
+==92== 
+==92== For lists of detected and suppressed errors, rerun with: -s
+==92== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.EmptyTopException" end time: May 24 16:30 UTC
+"HeapTest.EmptyTopException" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/60 Testing: HeapTest.EmptyPopException
+19/60 Test: HeapTest.EmptyPopException
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.EmptyPopException"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.EmptyPopException" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==93== Memcheck, a memory error detector
+==93== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==93== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==93== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.EmptyPopException
+==93== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.EmptyPopException
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.EmptyPopException
+[       OK ] HeapTest.EmptyPopException (12 ms)
+[----------] 1 test from HeapTest (15 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (22 ms total)
+[  PASSED  ] 1 test.
+==93== 
+==93== HEAP SUMMARY:
+==93==     in use at exit: 0 bytes in 0 blocks
+==93==   total heap usage: 459 allocs, 459 frees, 132,170 bytes allocated
+==93== 
+==93== All heap blocks were freed -- no leaks are possible
+==93== 
+==93== For lists of detected and suppressed errors, rerun with: -s
+==93== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.EmptyPopException" end time: May 24 16:30 UTC
+"HeapTest.EmptyPopException" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/60 Testing: HeapTest.SingleItemNonempty
+20/60 Test: HeapTest.SingleItemNonempty
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemNonempty"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.SingleItemNonempty" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==94== Memcheck, a memory error detector
+==94== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==94== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==94== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.SingleItemNonempty
+==94== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.SingleItemNonempty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.SingleItemNonempty
+[       OK ] HeapTest.SingleItemNonempty (5 ms)
+[----------] 1 test from HeapTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==94== 
+==94== HEAP SUMMARY:
+==94==     in use at exit: 0 bytes in 0 blocks
+==94==   total heap usage: 458 allocs, 458 frees, 131,999 bytes allocated
+==94== 
+==94== All heap blocks were freed -- no leaks are possible
+==94== 
+==94== For lists of detected and suppressed errors, rerun with: -s
+==94== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.SingleItemNonempty" end time: May 24 16:30 UTC
+"HeapTest.SingleItemNonempty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/60 Testing: HeapTest.SingleItemPush
+21/60 Test: HeapTest.SingleItemPush
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemPush"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.SingleItemPush" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==95== Memcheck, a memory error detector
+==95== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==95== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==95== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.SingleItemPush
+==95== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.SingleItemPush
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.SingleItemPush
+[       OK ] HeapTest.SingleItemPush (5 ms)
+[----------] 1 test from HeapTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (14 ms total)
+[  PASSED  ] 1 test.
+==95== 
+==95== HEAP SUMMARY:
+==95==     in use at exit: 0 bytes in 0 blocks
+==95==   total heap usage: 458 allocs, 458 frees, 131,971 bytes allocated
+==95== 
+==95== All heap blocks were freed -- no leaks are possible
+==95== 
+==95== For lists of detected and suppressed errors, rerun with: -s
+==95== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.SingleItemPush" end time: May 24 16:30 UTC
+"HeapTest.SingleItemPush" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/60 Testing: HeapTest.SingleItemPushPop
+22/60 Test: HeapTest.SingleItemPushPop
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SingleItemPushPop"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.SingleItemPushPop" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==96== Memcheck, a memory error detector
+==96== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==96== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==96== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.SingleItemPushPop
+==96== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.SingleItemPushPop
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.SingleItemPushPop
+[       OK ] HeapTest.SingleItemPushPop (6 ms)
+[----------] 1 test from HeapTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (14 ms total)
+[  PASSED  ] 1 test.
+==96== 
+==96== HEAP SUMMARY:
+==96==     in use at exit: 0 bytes in 0 blocks
+==96==   total heap usage: 458 allocs, 458 frees, 131,992 bytes allocated
+==96== 
+==96== All heap blocks were freed -- no leaks are possible
+==96== 
+==96== For lists of detected and suppressed errors, rerun with: -s
+==96== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.SingleItemPushPop" end time: May 24 16:30 UTC
+"HeapTest.SingleItemPushPop" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/60 Testing: HeapTest.TwoElementPush_LowPriFirst
+23/60 Test: HeapTest.TwoElementPush_LowPriFirst
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.TwoElementPush_LowPriFirst"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.TwoElementPush_LowPriFirst" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==97== Memcheck, a memory error detector
+==97== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==97== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==97== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.TwoElementPush_LowPriFirst
+==97== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.TwoElementPush_LowPriFirst
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.TwoElementPush_LowPriFirst
+[       OK ] HeapTest.TwoElementPush_LowPriFirst (5 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==97== 
+==97== HEAP SUMMARY:
+==97==     in use at exit: 0 bytes in 0 blocks
+==97==   total heap usage: 459 allocs, 459 frees, 132,198 bytes allocated
+==97== 
+==97== All heap blocks were freed -- no leaks are possible
+==97== 
+==97== For lists of detected and suppressed errors, rerun with: -s
+==97== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.TwoElementPush_LowPriFirst" end time: May 24 16:30 UTC
+"HeapTest.TwoElementPush_LowPriFirst" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/60 Testing: HeapTest.TwoElementPush_HighPriFirst
+24/60 Test: HeapTest.TwoElementPush_HighPriFirst
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.TwoElementPush_HighPriFirst"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.TwoElementPush_HighPriFirst" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==98== Memcheck, a memory error detector
+==98== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==98== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==98== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.TwoElementPush_HighPriFirst
+==98== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.TwoElementPush_HighPriFirst
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.TwoElementPush_HighPriFirst
+[       OK ] HeapTest.TwoElementPush_HighPriFirst (5 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==98== 
+==98== HEAP SUMMARY:
+==98==     in use at exit: 0 bytes in 0 blocks
+==98==   total heap usage: 459 allocs, 459 frees, 132,232 bytes allocated
+==98== 
+==98== All heap blocks were freed -- no leaks are possible
+==98== 
+==98== For lists of detected and suppressed errors, rerun with: -s
+==98== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.TwoElementPush_HighPriFirst" end time: May 24 16:30 UTC
+"HeapTest.TwoElementPush_HighPriFirst" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/60 Testing: HeapTest.Duplicates
+25/60 Test: HeapTest.Duplicates
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.Duplicates"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.Duplicates" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==99== Memcheck, a memory error detector
+==99== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==99== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==99== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.Duplicates
+==99== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.Duplicates
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.Duplicates
+[       OK ] HeapTest.Duplicates (6 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==99== 
+==99== HEAP SUMMARY:
+==99==     in use at exit: 0 bytes in 0 blocks
+==99==   total heap usage: 460 allocs, 460 frees, 131,967 bytes allocated
+==99== 
+==99== All heap blocks were freed -- no leaks are possible
+==99== 
+==99== For lists of detected and suppressed errors, rerun with: -s
+==99== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.Duplicates" end time: May 24 16:30 UTC
+"HeapTest.Duplicates" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/60 Testing: HeapTest.NegativeElements
+26/60 Test: HeapTest.NegativeElements
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.NegativeElements"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.NegativeElements" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==100== Memcheck, a memory error detector
+==100== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==100== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==100== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.NegativeElements
+==100== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.NegativeElements
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.NegativeElements
+[       OK ] HeapTest.NegativeElements (6 ms)
+[----------] 1 test from HeapTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==100== 
+==100== HEAP SUMMARY:
+==100==     in use at exit: 0 bytes in 0 blocks
+==100==   total heap usage: 459 allocs, 459 frees, 131,993 bytes allocated
+==100== 
+==100== All heap blocks were freed -- no leaks are possible
+==100== 
+==100== For lists of detected and suppressed errors, rerun with: -s
+==100== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.NegativeElements" end time: May 24 16:30 UTC
+"HeapTest.NegativeElements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/60 Testing: HeapTest.ThreeElementPush_0_5_10
+27/60 Test: HeapTest.ThreeElementPush_0_5_10
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_0_5_10"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.ThreeElementPush_0_5_10" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==101== Memcheck, a memory error detector
+==101== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==101== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==101== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.ThreeElementPush_0_5_10
+==101== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.ThreeElementPush_0_5_10
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.ThreeElementPush_0_5_10
+[       OK ] HeapTest.ThreeElementPush_0_5_10 (6 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==101== 
+==101== HEAP SUMMARY:
+==101==     in use at exit: 0 bytes in 0 blocks
+==101==   total heap usage: 460 allocs, 460 frees, 132,112 bytes allocated
+==101== 
+==101== All heap blocks were freed -- no leaks are possible
+==101== 
+==101== For lists of detected and suppressed errors, rerun with: -s
+==101== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.ThreeElementPush_0_5_10" end time: May 24 16:30 UTC
+"HeapTest.ThreeElementPush_0_5_10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/60 Testing: HeapTest.ThreeElementPush_0_10_5
+28/60 Test: HeapTest.ThreeElementPush_0_10_5
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_0_10_5"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.ThreeElementPush_0_10_5" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==102== Memcheck, a memory error detector
+==102== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==102== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==102== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.ThreeElementPush_0_10_5
+==102== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.ThreeElementPush_0_10_5
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.ThreeElementPush_0_10_5
+[       OK ] HeapTest.ThreeElementPush_0_10_5 (6 ms)
+[----------] 1 test from HeapTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==102== 
+==102== HEAP SUMMARY:
+==102==     in use at exit: 0 bytes in 0 blocks
+==102==   total heap usage: 460 allocs, 460 frees, 132,112 bytes allocated
+==102== 
+==102== All heap blocks were freed -- no leaks are possible
+==102== 
+==102== For lists of detected and suppressed errors, rerun with: -s
+==102== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.ThreeElementPush_0_10_5" end time: May 24 16:30 UTC
+"HeapTest.ThreeElementPush_0_10_5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/60 Testing: HeapTest.ThreeElementPush_5_0_10
+29/60 Test: HeapTest.ThreeElementPush_5_0_10
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_5_0_10"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.ThreeElementPush_5_0_10" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==103== Memcheck, a memory error detector
+==103== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==103== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==103== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.ThreeElementPush_5_0_10
+==103== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.ThreeElementPush_5_0_10
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.ThreeElementPush_5_0_10
+[       OK ] HeapTest.ThreeElementPush_5_0_10 (6 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==103== 
+==103== HEAP SUMMARY:
+==103==     in use at exit: 0 bytes in 0 blocks
+==103==   total heap usage: 460 allocs, 460 frees, 132,112 bytes allocated
+==103== 
+==103== All heap blocks were freed -- no leaks are possible
+==103== 
+==103== For lists of detected and suppressed errors, rerun with: -s
+==103== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.ThreeElementPush_5_0_10" end time: May 24 16:30 UTC
+"HeapTest.ThreeElementPush_5_0_10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/60 Testing: HeapTest.ThreeElementPush_5_10_0
+30/60 Test: HeapTest.ThreeElementPush_5_10_0
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_5_10_0"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.ThreeElementPush_5_10_0" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==104== Memcheck, a memory error detector
+==104== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==104== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==104== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.ThreeElementPush_5_10_0
+==104== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.ThreeElementPush_5_10_0
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.ThreeElementPush_5_10_0
+[       OK ] HeapTest.ThreeElementPush_5_10_0 (7 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==104== 
+==104== HEAP SUMMARY:
+==104==     in use at exit: 0 bytes in 0 blocks
+==104==   total heap usage: 460 allocs, 460 frees, 132,112 bytes allocated
+==104== 
+==104== All heap blocks were freed -- no leaks are possible
+==104== 
+==104== For lists of detected and suppressed errors, rerun with: -s
+==104== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.ThreeElementPush_5_10_0" end time: May 24 16:30 UTC
+"HeapTest.ThreeElementPush_5_10_0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/60 Testing: HeapTest.ThreeElementPush_10_0_5
+31/60 Test: HeapTest.ThreeElementPush_10_0_5
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_10_0_5"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.ThreeElementPush_10_0_5" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==105== Memcheck, a memory error detector
+==105== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==105== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==105== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.ThreeElementPush_10_0_5
+==105== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.ThreeElementPush_10_0_5
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.ThreeElementPush_10_0_5
+[       OK ] HeapTest.ThreeElementPush_10_0_5 (6 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==105== 
+==105== HEAP SUMMARY:
+==105==     in use at exit: 0 bytes in 0 blocks
+==105==   total heap usage: 460 allocs, 460 frees, 132,112 bytes allocated
+==105== 
+==105== All heap blocks were freed -- no leaks are possible
+==105== 
+==105== For lists of detected and suppressed errors, rerun with: -s
+==105== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.ThreeElementPush_10_0_5" end time: May 24 16:30 UTC
+"HeapTest.ThreeElementPush_10_0_5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/60 Testing: HeapTest.ThreeElementPush_10_5_0
+32/60 Test: HeapTest.ThreeElementPush_10_5_0
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.ThreeElementPush_10_5_0"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.ThreeElementPush_10_5_0" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==106== Memcheck, a memory error detector
+==106== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==106== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==106== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.ThreeElementPush_10_5_0
+==106== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.ThreeElementPush_10_5_0
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.ThreeElementPush_10_5_0
+[       OK ] HeapTest.ThreeElementPush_10_5_0 (6 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==106== 
+==106== HEAP SUMMARY:
+==106==     in use at exit: 0 bytes in 0 blocks
+==106==   total heap usage: 460 allocs, 460 frees, 132,112 bytes allocated
+==106== 
+==106== All heap blocks were freed -- no leaks are possible
+==106== 
+==106== For lists of detected and suppressed errors, rerun with: -s
+==106== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.ThreeElementPush_10_5_0" end time: May 24 16:30 UTC
+"HeapTest.ThreeElementPush_10_5_0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/60 Testing: HeapTest.GreaterComparator
+33/60 Test: HeapTest.GreaterComparator
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.GreaterComparator"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.GreaterComparator" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==107== Memcheck, a memory error detector
+==107== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==107== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==107== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.GreaterComparator
+==107== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.GreaterComparator
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.GreaterComparator
+[       OK ] HeapTest.GreaterComparator (6 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==107== 
+==107== HEAP SUMMARY:
+==107==     in use at exit: 0 bytes in 0 blocks
+==107==   total heap usage: 460 allocs, 460 frees, 132,016 bytes allocated
+==107== 
+==107== All heap blocks were freed -- no leaks are possible
+==107== 
+==107== For lists of detected and suppressed errors, rerun with: -s
+==107== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.GreaterComparator" end time: May 24 16:30 UTC
+"HeapTest.GreaterComparator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/60 Testing: HeapTest.StringStorage
+34/60 Test: HeapTest.StringStorage
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.StringStorage"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.StringStorage" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==108== Memcheck, a memory error detector
+==108== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==108== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==108== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.StringStorage
+==108== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.StringStorage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.StringStorage
+[       OK ] HeapTest.StringStorage (5 ms)
+[----------] 1 test from HeapTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (14 ms total)
+[  PASSED  ] 1 test.
+==108== 
+==108== HEAP SUMMARY:
+==108==     in use at exit: 0 bytes in 0 blocks
+==108==   total heap usage: 460 allocs, 460 frees, 132,184 bytes allocated
+==108== 
+==108== All heap blocks were freed -- no leaks are possible
+==108== 
+==108== For lists of detected and suppressed errors, rerun with: -s
+==108== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.StringStorage" end time: May 24 16:30 UTC
+"HeapTest.StringStorage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/60 Testing: HeapTest.FiveElementPush_TrinaryHeap
+35/60 Test: HeapTest.FiveElementPush_TrinaryHeap
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.FiveElementPush_TrinaryHeap"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.FiveElementPush_TrinaryHeap" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==109== Memcheck, a memory error detector
+==109== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==109== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==109== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.FiveElementPush_TrinaryHeap
+==109== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.FiveElementPush_TrinaryHeap
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.FiveElementPush_TrinaryHeap
+[       OK ] HeapTest.FiveElementPush_TrinaryHeap (7 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==109== 
+==109== HEAP SUMMARY:
+==109==     in use at exit: 0 bytes in 0 blocks
+==109==   total heap usage: 461 allocs, 461 frees, 132,280 bytes allocated
+==109== 
+==109== All heap blocks were freed -- no leaks are possible
+==109== 
+==109== For lists of detected and suppressed errors, rerun with: -s
+==109== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.FiveElementPush_TrinaryHeap" end time: May 24 16:30 UTC
+"HeapTest.FiveElementPush_TrinaryHeap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/60 Testing: HeapTest.SixElementPush_QuaternaryHeap
+36/60 Test: HeapTest.SixElementPush_QuaternaryHeap
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapTest.SixElementPush_QuaternaryHeap"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapTest.SixElementPush_QuaternaryHeap" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==110== Memcheck, a memory error detector
+==110== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==110== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==110== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapTest.SixElementPush_QuaternaryHeap
+==110== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapTest.SixElementPush_QuaternaryHeap
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapTest
+[ RUN      ] HeapTest.SixElementPush_QuaternaryHeap
+[       OK ] HeapTest.SixElementPush_QuaternaryHeap (7 ms)
+[----------] 1 test from HeapTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+==110== 
+==110== HEAP SUMMARY:
+==110==     in use at exit: 0 bytes in 0 blocks
+==110==   total heap usage: 461 allocs, 461 frees, 132,348 bytes allocated
+==110== 
+==110== All heap blocks were freed -- no leaks are possible
+==110== 
+==110== For lists of detected and suppressed errors, rerun with: -s
+==110== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"HeapTest.SixElementPush_QuaternaryHeap" end time: May 24 16:30 UTC
+"HeapTest.SixElementPush_QuaternaryHeap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/60 Testing: HeapStress.50x50RandomElements_BinaryHeap
+37/60 Test: HeapStress.50x50RandomElements_BinaryHeap
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.50x50RandomElements_BinaryHeap"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapStress.50x50RandomElements_BinaryHeap" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==111== Memcheck, a memory error detector
+==111== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==111== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==111== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapStress.50x50RandomElements_BinaryHeap
+==111== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapStress.50x50RandomElements_BinaryHeap
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapStress
+[ RUN      ] HeapStress.50x50RandomElements_BinaryHeap
+[       OK ] HeapStress.50x50RandomElements_BinaryHeap (82 ms)
+[----------] 1 test from HeapStress (84 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (91 ms total)
+[  PASSED  ] 1 test.
+==111== 
+==111== HEAP SUMMARY:
+==111==     in use at exit: 0 bytes in 0 blocks
+==111==   total heap usage: 958 allocs, 958 frees, 179,982 bytes allocated
+==111== 
+==111== All heap blocks were freed -- no leaks are possible
+==111== 
+==111== For lists of detected and suppressed errors, rerun with: -s
+==111== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.49 sec
+----------------------------------------------------------
+Test Passed.
+"HeapStress.50x50RandomElements_BinaryHeap" end time: May 24 16:30 UTC
+"HeapStress.50x50RandomElements_BinaryHeap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/60 Testing: HeapStress.50x50RandomElements_QuaternaryHeap
+38/60 Test: HeapStress.50x50RandomElements_QuaternaryHeap
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.50x50RandomElements_QuaternaryHeap"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapStress.50x50RandomElements_QuaternaryHeap" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==112== Memcheck, a memory error detector
+==112== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==112== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==112== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapStress.50x50RandomElements_QuaternaryHeap
+==112== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapStress.50x50RandomElements_QuaternaryHeap
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapStress
+[ RUN      ] HeapStress.50x50RandomElements_QuaternaryHeap
+[       OK ] HeapStress.50x50RandomElements_QuaternaryHeap (81 ms)
+[----------] 1 test from HeapStress (82 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (90 ms total)
+[  PASSED  ] 1 test.
+==112== 
+==112== HEAP SUMMARY:
+==112==     in use at exit: 0 bytes in 0 blocks
+==112==   total heap usage: 958 allocs, 958 frees, 180,118 bytes allocated
+==112== 
+==112== All heap blocks were freed -- no leaks are possible
+==112== 
+==112== For lists of detected and suppressed errors, rerun with: -s
+==112== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.49 sec
+----------------------------------------------------------
+Test Passed.
+"HeapStress.50x50RandomElements_QuaternaryHeap" end time: May 24 16:30 UTC
+"HeapStress.50x50RandomElements_QuaternaryHeap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/60 Testing: HeapStress.50x50RandomElements_DodecenaryHeap
+39/60 Test: HeapStress.50x50RandomElements_DodecenaryHeap
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.50x50RandomElements_DodecenaryHeap"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapStress.50x50RandomElements_DodecenaryHeap" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==113== Memcheck, a memory error detector
+==113== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==113== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==113== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapStress.50x50RandomElements_DodecenaryHeap
+==113== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapStress.50x50RandomElements_DodecenaryHeap
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapStress
+[ RUN      ] HeapStress.50x50RandomElements_DodecenaryHeap
+[       OK ] HeapStress.50x50RandomElements_DodecenaryHeap (86 ms)
+[----------] 1 test from HeapStress (88 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (94 ms total)
+[  PASSED  ] 1 test.
+==113== 
+==113== HEAP SUMMARY:
+==113==     in use at exit: 0 bytes in 0 blocks
+==113==   total heap usage: 958 allocs, 958 frees, 180,118 bytes allocated
+==113== 
+==113== All heap blocks were freed -- no leaks are possible
+==113== 
+==113== For lists of detected and suppressed errors, rerun with: -s
+==113== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.49 sec
+----------------------------------------------------------
+Test Passed.
+"HeapStress.50x50RandomElements_DodecenaryHeap" end time: May 24 16:30 UTC
+"HeapStress.50x50RandomElements_DodecenaryHeap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/60 Testing: HeapStress.2x2000RandomElements_Binary
+40/60 Test: HeapStress.2x2000RandomElements_Binary
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests" "--gtest_filter=HeapStress.2x2000RandomElements_Binary"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests
+"HeapStress.2x2000RandomElements_Binary" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+==114== Memcheck, a memory error detector
+==114== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==114== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==114== Command: /work/hw-alamgir/hw3/hw3_stu_tests/heap_tests/heap_tests --gtest_filter=HeapStress.2x2000RandomElements_Binary
+==114== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = HeapStress.2x2000RandomElements_Binary
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HeapStress
+[ RUN      ] HeapStress.2x2000RandomElements_Binary
+[       OK ] HeapStress.2x2000RandomElements_Binary (105 ms)
+[----------] 1 test from HeapStress (108 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (115 ms total)
+[  PASSED  ] 1 test.
+==114== 
+==114== HEAP SUMMARY:
+==114==     in use at exit: 0 bytes in 0 blocks
+==114==   total heap usage: 488 allocs, 488 frees, 197,128 bytes allocated
+==114== 
+==114== All heap blocks were freed -- no leaks are possible
+==114== 
+==114== For lists of detected and suppressed errors, rerun with: -s
+==114== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.52 sec
+----------------------------------------------------------
+Test Passed.
+"HeapStress.2x2000RandomElements_Binary" end time: May 24 16:30 UTC
+"HeapStress.2x2000RandomElements_Binary" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/60 Testing: Heuristic.DirectHeuristic0
+41/60 Test: Heuristic.DirectHeuristic0
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Heuristic.DirectHeuristic0"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Heuristic.DirectHeuristic0" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Heuristic.DirectHeuristic0" end time: May 24 16:30 UTC
+"Heuristic.DirectHeuristic0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/60 Testing: Heuristic.DirectHeuristic1
+42/60 Test: Heuristic.DirectHeuristic1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Heuristic.DirectHeuristic1"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Heuristic.DirectHeuristic1" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Heuristic.DirectHeuristic1" end time: May 24 16:30 UTC
+"Heuristic.DirectHeuristic1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/60 Testing: Heuristic.DirectHeuristic234
+43/60 Test: Heuristic.DirectHeuristic234
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Heuristic.DirectHeuristic234"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Heuristic.DirectHeuristic234" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Heuristic.DirectHeuristic234" end time: May 24 16:30 UTC
+"Heuristic.DirectHeuristic234" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/60 Testing: Heuristic.IndirectHeuristic0
+44/60 Test: Heuristic.IndirectHeuristic0
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Heuristic.IndirectHeuristic0"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Heuristic.IndirectHeuristic0" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Heuristic.IndirectHeuristic0" end time: May 24 16:30 UTC
+"Heuristic.IndirectHeuristic0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/60 Testing: Heuristic.IndirectHeuristic1
+45/60 Test: Heuristic.IndirectHeuristic1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Heuristic.IndirectHeuristic1"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Heuristic.IndirectHeuristic1" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"Heuristic.IndirectHeuristic1" end time: May 24 16:30 UTC
+"Heuristic.IndirectHeuristic1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/60 Testing: Heuristic.IndirectHeuristic234
+46/60 Test: Heuristic.IndirectHeuristic234
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Heuristic.IndirectHeuristic234"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Heuristic.IndirectHeuristic234" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Heuristic.IndirectHeuristic234" end time: May 24 16:30 UTC
+"Heuristic.IndirectHeuristic234" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/60 Testing: Heuristic.IndirectHeuristicFalsePositives
+47/60 Test: Heuristic.IndirectHeuristicFalsePositives
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Heuristic.IndirectHeuristicFalsePositives"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Heuristic.IndirectHeuristicFalsePositives" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Heuristic.IndirectHeuristicFalsePositives" end time: May 24 16:30 UTC
+"Heuristic.IndirectHeuristicFalsePositives" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/60 Testing: Heuristic.IndirectHeuristicTruePositives
+48/60 Test: Heuristic.IndirectHeuristicTruePositives
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Heuristic.IndirectHeuristicTruePositives"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Heuristic.IndirectHeuristicTruePositives" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Heuristic.IndirectHeuristicTruePositives" end time: May 24 16:30 UTC
+"Heuristic.IndirectHeuristicTruePositives" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/60 Testing: Heuristic.IndirectHeuristicAboveBelow
+49/60 Test: Heuristic.IndirectHeuristicAboveBelow
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Heuristic.IndirectHeuristicAboveBelow"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Heuristic.IndirectHeuristicAboveBelow" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Heuristic.IndirectHeuristicAboveBelow" end time: May 24 16:30 UTC
+"Heuristic.IndirectHeuristicAboveBelow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/60 Testing: OperatorLT.Nominal1
+50/60 Test: OperatorLT.Nominal1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=OperatorLT.Nominal1"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"OperatorLT.Nominal1" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"OperatorLT.Nominal1" end time: May 24 16:30 UTC
+"OperatorLT.Nominal1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/60 Testing: Move.ConstructorAndScore
+51/60 Test: Move.ConstructorAndScore
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Move.ConstructorAndScore"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Move.ConstructorAndScore" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Move.ConstructorAndScore" end time: May 24 16:30 UTC
+"Move.ConstructorAndScore" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/60 Testing: BoardTest.PotentialMoves1
+52/60 Test: BoardTest.PotentialMoves1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=BoardTest.PotentialMoves1"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"BoardTest.PotentialMoves1" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"BoardTest.PotentialMoves1" end time: May 24 16:30 UTC
+"BoardTest.PotentialMoves1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/60 Testing: BoardTest.PotentialMoves2
+53/60 Test: BoardTest.PotentialMoves2
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=BoardTest.PotentialMoves2"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"BoardTest.PotentialMoves2" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"BoardTest.PotentialMoves2" end time: May 24 16:30 UTC
+"BoardTest.PotentialMoves2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/60 Testing: BoardTest.NoPotentialMoves
+54/60 Test: BoardTest.NoPotentialMoves
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=BoardTest.NoPotentialMoves"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"BoardTest.NoPotentialMoves" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"BoardTest.NoPotentialMoves" end time: May 24 16:30 UTC
+"BoardTest.NoPotentialMoves" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/60 Testing: BoardTest.Undo1
+55/60 Test: BoardTest.Undo1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=BoardTest.Undo1"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"BoardTest.Undo1" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"BoardTest.Undo1" end time: May 24 16:30 UTC
+"BoardTest.Undo1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/60 Testing: Solver.Basic
+56/60 Test: Solver.Basic
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Solver.Basic"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Solver.Basic" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"Solver.Basic" end time: May 24 16:30 UTC
+"Solver.Basic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/60 Testing: Solver.Difficult
+57/60 Test: Solver.Difficult
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Solver.Difficult"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Solver.Difficult" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Solver.Difficult" end time: May 24 16:30 UTC
+"Solver.Difficult" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/60 Testing: Solver.InBoard10x10
+58/60 Test: Solver.InBoard10x10
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Solver.InBoard10x10"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Solver.InBoard10x10" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Solver.InBoard10x10" end time: May 24 16:30 UTC
+"Solver.InBoard10x10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/60 Testing: Solver.Direct
+59/60 Test: Solver.Direct
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Solver.Direct"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Solver.Direct" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Solver.Direct" end time: May 24 16:30 UTC
+"Solver.Direct" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/60 Testing: Solver.UnSolvable1
+60/60 Test: Solver.UnSolvable1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests" "--gtest_filter=Solver.UnSolvable1"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests
+"Solver.UnSolvable1" start time: May 24 16:30 UTC
+Output:
+----------------------------------------------------------
+valgrind: /work/hw-alamgir/hw3/hw3_stu_tests/rh_tests/rh_tests: No such file or directory
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Solver.UnSolvable1" end time: May 24 16:30 UTC
+"Solver.UnSolvable1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 24 16:30 UTC

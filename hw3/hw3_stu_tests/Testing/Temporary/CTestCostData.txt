@@ -1,0 +1,81 @@
+Pivot.Nominal 16 0.0297049
+Filter.Size3_nF_F_nF 18 0.0224751
+Stack.BasicString 15 0.0322401
+Stack.RandomInt 15 0.081832
+Stack.TopEmpty 16 0.0260467
+Stack.OneElementPush 16 0.0251445
+Stack.FiveElementPush 16 0.0255506
+Stack.OneElementPop 16 0.0255888
+Stack.FiveElementPop 16 0.0255858
+Stack.PopEmpty 16 0.0253036
+Stack.EmptyThenRefill 16 0.0248894
+Stack.PopThenAdd 16 0.0249799
+StackStress.50x50Elements 16 0.0249042
+StackStress.5x1000Elements 16 0.024989
+StackStress.2x10000Elements 16 0.0249259
+HeapTest.ConstructionDestruction 11 0.0438695
+HeapTest.InitiallyEmpty 11 0.0378293
+HeapTest.EmptyTopException 11 0.0385313
+HeapTest.EmptyPopException 11 0.0383913
+HeapTest.SingleItemNonempty 11 0.0380858
+HeapTest.SingleItemPush 11 0.0379312
+HeapTest.SingleItemPushPop 11 0.0377374
+HeapTest.TwoElementPush_LowPriFirst 11 0.0381796
+HeapTest.TwoElementPush_HighPriFirst 11 0.0377933
+HeapTest.Duplicates 11 0.0378855
+HeapTest.NegativeElements 11 0.0377567
+HeapTest.ThreeElementPush_0_5_10 11 0.037839
+HeapTest.ThreeElementPush_0_10_5 11 0.0376804
+HeapTest.ThreeElementPush_5_0_10 11 0.0377928
+HeapTest.ThreeElementPush_5_10_0 11 0.037727
+HeapTest.ThreeElementPush_10_0_5 11 0.0377084
+HeapTest.ThreeElementPush_10_5_0 11 0.0381329
+HeapTest.GreaterComparator 11 0.0378103
+HeapTest.StringStorage 11 0.0377261
+HeapTest.FiveElementPush_TrinaryHeap 11 0.0378339
+HeapTest.SixElementPush_QuaternaryHeap 11 0.0378293
+HeapStress.50x50RandomElements_BinaryHeap 11 0.044631
+HeapStress.50x50RandomElements_QuaternaryHeap 11 0.0447513
+HeapStress.50x50RandomElements_DodecenaryHeap 11 0.0449804
+HeapStress.2x2000RandomElements_Binary 11 0.0468645
+Heuristic.DirectHeuristic0 0 0
+Heuristic.DirectHeuristic1 0 0
+Heuristic.DirectHeuristic234 0 0
+Heuristic.IndirectHeuristic0 0 0
+Heuristic.IndirectHeuristic1 0 0
+Heuristic.IndirectHeuristic234 0 0
+Heuristic.IndirectHeuristicFalsePositives 0 0
+Heuristic.IndirectHeuristicTruePositives 0 0
+Heuristic.IndirectHeuristicAboveBelow 0 0
+OperatorLT.Nominal1 0 0
+Move.ConstructorAndScore 0 0
+BoardTest.PotentialMoves1 0 0
+BoardTest.PotentialMoves2 0 0
+BoardTest.NoPotentialMoves 0 0
+BoardTest.Undo1 0 0
+Solver.Basic 0 0
+Solver.Difficult 0 0
+Solver.InBoard10x10 0 0
+Solver.Direct 0 0
+Solver.UnSolvable1 0 0
+---
+Heuristic.DirectHeuristic0
+Heuristic.DirectHeuristic1
+Heuristic.DirectHeuristic234
+Heuristic.IndirectHeuristic0
+Heuristic.IndirectHeuristic1
+Heuristic.IndirectHeuristic234
+Heuristic.IndirectHeuristicFalsePositives
+Heuristic.IndirectHeuristicTruePositives
+Heuristic.IndirectHeuristicAboveBelow
+OperatorLT.Nominal1
+Move.ConstructorAndScore
+BoardTest.PotentialMoves1
+BoardTest.PotentialMoves2
+BoardTest.NoPotentialMoves
+BoardTest.Undo1
+Solver.Basic
+Solver.Difficult
+Solver.InBoard10x10
+Solver.Direct
+Solver.UnSolvable1

@@ -1,0 +1,35 @@
+HashTable.LinearProberFailureCheck 8 0.0640546
+HashTable.DoubleHashProberSequenceCheck 8 0.052527
+HashTable.DoubleHashProberFailureCheck 8 0.0512532
+HashTable.Constructor 8 0.0518773
+HashTable.Insert 4 0.105121
+HashTable.InsertDuplicate 4 0.105177
+HashTable.InsertCollision 0 0
+HashTable.InsertResize 0 0
+HashTable.InsertResizeFactor 0 0
+HashTable.Find 0 0
+HashTable.FindCollisions 0 0
+HashTable.Remove 6 0.0700499
+HashTable.RemoveNothing 0 0
+HashTable.RemoveCollisions 0 0
+HashTable.TestSize 2 0
+HashTable.TestEmpty 4 0.104073
+HashTable.LogicErrorTest 0 0
+HashTable.InsertDoubleHashProbeCollision 0 0
+HashTable.InsertStressTestResizeOneLoadFactor 0 0
+HashTable.InsertStressTestResizeNotOneLoadFactor 0 0
+HashTable.StressInsertRemoveResizeLinear 0 0
+---
+HashTable.InsertCollision
+HashTable.InsertResize
+HashTable.InsertResizeFactor
+HashTable.Find
+HashTable.FindCollisions
+HashTable.RemoveNothing
+HashTable.RemoveCollisions
+HashTable.TestSize
+HashTable.LogicErrorTest
+HashTable.InsertDoubleHashProbeCollision
+HashTable.InsertStressTestResizeOneLoadFactor
+HashTable.InsertStressTestResizeNotOneLoadFactor
+HashTable.StressInsertRemoveResizeLinear

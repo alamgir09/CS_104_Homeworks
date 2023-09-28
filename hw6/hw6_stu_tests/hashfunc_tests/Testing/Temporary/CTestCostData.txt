@@ -1,0 +1,12 @@
+HashFunc.ExampleOne 7 0.0720561
+HashFunc.ExampleTwo 7 0.0578692
+HashFunc.ExampleThree 7 0.0579227
+HashFunc.LargestInputString 4 0.101041
+HashFunc.StringEmpty 8 0.0503265
+HashFunc.String1 7 0.0578301
+HashFunc.String7 7 0.0597041
+HashFunc.String12 7 0.0574308
+HashFunc.String13 7 0.0601144
+HashFunc.StringCase 7 0.0616183
+HashFunc.TestRandomize 7 0.782761
+---

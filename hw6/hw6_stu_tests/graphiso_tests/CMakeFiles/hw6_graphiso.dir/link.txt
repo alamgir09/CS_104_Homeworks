@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhw6_graphiso.a  CMakeFiles/hw6_graphiso.dir/work/hw-alamgir/hw6/graphiso.cpp.o
+/usr/bin/ranlib libhw6_graphiso.a

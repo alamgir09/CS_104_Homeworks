@@ -1,0 +1,459 @@
+Start testing: Feb 25 20:34 UTC
+----------------------------------------------------------
+1/13 Testing: Stack.BasicString
+1/13 Test: Stack.BasicString
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.BasicString"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.BasicString" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1200== Memcheck, a memory error detector
+==1200== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1200== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1200== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.BasicString
+==1200== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.BasicString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Stack
+[ RUN      ] Stack.BasicString
+[       OK ] Stack.BasicString (17 ms)
+[----------] 1 test from Stack (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (27 ms total)
+[  PASSED  ] 1 test.
+==1200== 
+==1200== HEAP SUMMARY:
+==1200==     in use at exit: 0 bytes in 0 blocks
+==1200==   total heap usage: 200 allocs, 200 frees, 116,242 bytes allocated
+==1200== 
+==1200== All heap blocks were freed -- no leaks are possible
+==1200== 
+==1200== For lists of detected and suppressed errors, rerun with: -s
+==1200== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.BasicString" end time: Feb 25 20:34 UTC
+"Stack.BasicString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/13 Testing: Stack.RandomInt
+2/13 Test: Stack.RandomInt
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.RandomInt"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.RandomInt" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1201== Memcheck, a memory error detector
+==1201== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1201== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1201== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.RandomInt
+==1201== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.RandomInt
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Stack
+[ RUN      ] Stack.RandomInt
+[       OK ] Stack.RandomInt (820 ms)
+[----------] 1 test from Stack (821 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (829 ms total)
+[  PASSED  ] 1 test.
+==1201== 
+==1201== HEAP SUMMARY:
+==1201==     in use at exit: 0 bytes in 0 blocks
+==1201==   total heap usage: 21,234 allocs, 21,234 frees, 1,077,116 bytes allocated
+==1201== 
+==1201== All heap blocks were freed -- no leaks are possible
+==1201== 
+==1201== For lists of detected and suppressed errors, rerun with: -s
+==1201== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   1.22 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.RandomInt" end time: Feb 25 20:34 UTC
+"Stack.RandomInt" time elapsed: 00:00:01
+----------------------------------------------------------
+
+3/13 Testing: Stack.TopEmpty
+3/13 Test: Stack.TopEmpty
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.TopEmpty"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.TopEmpty" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1202== Memcheck, a memory error detector
+==1202== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1202== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1202== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.TopEmpty
+==1202== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.TopEmpty
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (4 ms total)
+[  PASSED  ] 0 tests.
+==1202== 
+==1202== HEAP SUMMARY:
+==1202==     in use at exit: 0 bytes in 0 blocks
+==1202==   total heap usage: 181 allocs, 181 frees, 113,527 bytes allocated
+==1202== 
+==1202== All heap blocks were freed -- no leaks are possible
+==1202== 
+==1202== For lists of detected and suppressed errors, rerun with: -s
+==1202== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.TopEmpty" end time: Feb 25 20:34 UTC
+"Stack.TopEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/13 Testing: Stack.OneElementPush
+4/13 Test: Stack.OneElementPush
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.OneElementPush"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.OneElementPush" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1203== Memcheck, a memory error detector
+==1203== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1203== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1203== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.OneElementPush
+==1203== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.OneElementPush
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==1203== 
+==1203== HEAP SUMMARY:
+==1203==     in use at exit: 0 bytes in 0 blocks
+==1203==   total heap usage: 184 allocs, 184 frees, 113,660 bytes allocated
+==1203== 
+==1203== All heap blocks were freed -- no leaks are possible
+==1203== 
+==1203== For lists of detected and suppressed errors, rerun with: -s
+==1203== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.OneElementPush" end time: Feb 25 20:34 UTC
+"Stack.OneElementPush" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/13 Testing: Stack.FiveElementPush
+5/13 Test: Stack.FiveElementPush
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.FiveElementPush"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.FiveElementPush" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1204== Memcheck, a memory error detector
+==1204== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1204== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1204== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.FiveElementPush
+==1204== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.FiveElementPush
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==1204== 
+==1204== HEAP SUMMARY:
+==1204==     in use at exit: 0 bytes in 0 blocks
+==1204==   total heap usage: 184 allocs, 184 frees, 113,667 bytes allocated
+==1204== 
+==1204== All heap blocks were freed -- no leaks are possible
+==1204== 
+==1204== For lists of detected and suppressed errors, rerun with: -s
+==1204== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.FiveElementPush" end time: Feb 25 20:34 UTC
+"Stack.FiveElementPush" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/13 Testing: Stack.OneElementPop
+6/13 Test: Stack.OneElementPop
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.OneElementPop"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.OneElementPop" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1205== Memcheck, a memory error detector
+==1205== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1205== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1205== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.OneElementPop
+==1205== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.OneElementPop
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (4 ms total)
+[  PASSED  ] 0 tests.
+==1205== 
+==1205== HEAP SUMMARY:
+==1205==     in use at exit: 0 bytes in 0 blocks
+==1205==   total heap usage: 184 allocs, 184 frees, 113,653 bytes allocated
+==1205== 
+==1205== All heap blocks were freed -- no leaks are possible
+==1205== 
+==1205== For lists of detected and suppressed errors, rerun with: -s
+==1205== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.OneElementPop" end time: Feb 25 20:34 UTC
+"Stack.OneElementPop" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/13 Testing: Stack.FiveElementPop
+7/13 Test: Stack.FiveElementPop
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.FiveElementPop"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.FiveElementPop" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1206== Memcheck, a memory error detector
+==1206== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1206== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1206== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.FiveElementPop
+==1206== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.FiveElementPop
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==1206== 
+==1206== HEAP SUMMARY:
+==1206==     in use at exit: 0 bytes in 0 blocks
+==1206==   total heap usage: 184 allocs, 184 frees, 113,660 bytes allocated
+==1206== 
+==1206== All heap blocks were freed -- no leaks are possible
+==1206== 
+==1206== For lists of detected and suppressed errors, rerun with: -s
+==1206== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.FiveElementPop" end time: Feb 25 20:34 UTC
+"Stack.FiveElementPop" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/13 Testing: Stack.PopEmpty
+8/13 Test: Stack.PopEmpty
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.PopEmpty"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.PopEmpty" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1207== Memcheck, a memory error detector
+==1207== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1207== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1207== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.PopEmpty
+==1207== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.PopEmpty
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==1207== 
+==1207== HEAP SUMMARY:
+==1207==     in use at exit: 0 bytes in 0 blocks
+==1207==   total heap usage: 181 allocs, 181 frees, 113,527 bytes allocated
+==1207== 
+==1207== All heap blocks were freed -- no leaks are possible
+==1207== 
+==1207== For lists of detected and suppressed errors, rerun with: -s
+==1207== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.PopEmpty" end time: Feb 25 20:34 UTC
+"Stack.PopEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/13 Testing: Stack.EmptyThenRefill
+9/13 Test: Stack.EmptyThenRefill
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.EmptyThenRefill"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.EmptyThenRefill" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1208== Memcheck, a memory error detector
+==1208== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1208== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1208== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.EmptyThenRefill
+==1208== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.EmptyThenRefill
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==1208== 
+==1208== HEAP SUMMARY:
+==1208==     in use at exit: 0 bytes in 0 blocks
+==1208==   total heap usage: 184 allocs, 184 frees, 113,667 bytes allocated
+==1208== 
+==1208== All heap blocks were freed -- no leaks are possible
+==1208== 
+==1208== For lists of detected and suppressed errors, rerun with: -s
+==1208== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.EmptyThenRefill" end time: Feb 25 20:34 UTC
+"Stack.EmptyThenRefill" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/13 Testing: Stack.PopThenAdd
+10/13 Test: Stack.PopThenAdd
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=Stack.PopThenAdd"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"Stack.PopThenAdd" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1209== Memcheck, a memory error detector
+==1209== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1209== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1209== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=Stack.PopThenAdd
+==1209== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = Stack.PopThenAdd
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==1209== 
+==1209== HEAP SUMMARY:
+==1209==     in use at exit: 0 bytes in 0 blocks
+==1209==   total heap usage: 184 allocs, 184 frees, 113,632 bytes allocated
+==1209== 
+==1209== All heap blocks were freed -- no leaks are possible
+==1209== 
+==1209== For lists of detected and suppressed errors, rerun with: -s
+==1209== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"Stack.PopThenAdd" end time: Feb 25 20:34 UTC
+"Stack.PopThenAdd" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/13 Testing: StackStress.50x50Elements
+11/13 Test: StackStress.50x50Elements
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=StackStress.50x50Elements"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"StackStress.50x50Elements" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1210== Memcheck, a memory error detector
+==1210== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1210== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1210== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=StackStress.50x50Elements
+==1210== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = StackStress.50x50Elements
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (5 ms total)
+[  PASSED  ] 0 tests.
+==1210== 
+==1210== HEAP SUMMARY:
+==1210==     in use at exit: 0 bytes in 0 blocks
+==1210==   total heap usage: 184 allocs, 184 frees, 113,695 bytes allocated
+==1210== 
+==1210== All heap blocks were freed -- no leaks are possible
+==1210== 
+==1210== For lists of detected and suppressed errors, rerun with: -s
+==1210== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"StackStress.50x50Elements" end time: Feb 25 20:34 UTC
+"StackStress.50x50Elements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/13 Testing: StackStress.5x1000Elements
+12/13 Test: StackStress.5x1000Elements
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=StackStress.5x1000Elements"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"StackStress.5x1000Elements" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1211== Memcheck, a memory error detector
+==1211== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1211== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1211== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=StackStress.5x1000Elements
+==1211== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = StackStress.5x1000Elements
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (4 ms total)
+[  PASSED  ] 0 tests.
+==1211== 
+==1211== HEAP SUMMARY:
+==1211==     in use at exit: 0 bytes in 0 blocks
+==1211==   total heap usage: 184 allocs, 184 frees, 113,702 bytes allocated
+==1211== 
+==1211== All heap blocks were freed -- no leaks are possible
+==1211== 
+==1211== For lists of detected and suppressed errors, rerun with: -s
+==1211== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"StackStress.5x1000Elements" end time: Feb 25 20:34 UTC
+"StackStress.5x1000Elements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/13 Testing: StackStress.2x10000Elements
+13/13 Test: StackStress.2x10000Elements
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests" "--gtest_filter=StackStress.2x10000Elements"
+Directory: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests
+"StackStress.2x10000Elements" start time: Feb 25 20:34 UTC
+Output:
+----------------------------------------------------------
+==1212== Memcheck, a memory error detector
+==1212== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1212== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1212== Command: /work/hw-alamgir/hw3/hw3_stu_tests/stack_tests/stack_tests --gtest_filter=StackStress.2x10000Elements
+==1212== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = StackStress.2x10000Elements
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (4 ms total)
+[  PASSED  ] 0 tests.
+==1212== 
+==1212== HEAP SUMMARY:
+==1212==     in use at exit: 0 bytes in 0 blocks
+==1212==   total heap usage: 184 allocs, 184 frees, 113,709 bytes allocated
+==1212== 
+==1212== All heap blocks were freed -- no leaks are possible
+==1212== 
+==1212== For lists of detected and suppressed errors, rerun with: -s
+==1212== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"StackStress.2x10000Elements" end time: Feb 25 20:34 UTC
+"StackStress.2x10000Elements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 25 20:34 UTC

@@ -1,0 +1,13 @@
+7:HashTable.InsertCollision
+8:HashTable.InsertResize
+9:HashTable.InsertResizeFactor
+10:HashTable.Find
+11:HashTable.FindCollisions
+13:HashTable.RemoveNothing
+14:HashTable.RemoveCollisions
+15:HashTable.TestSize
+17:HashTable.LogicErrorTest
+18:HashTable.InsertDoubleHashProbeCollision
+19:HashTable.InsertStressTestResizeOneLoadFactor
+20:HashTable.InsertStressTestResizeNotOneLoadFactor
+21:HashTable.StressInsertRemoveResizeLinear

@@ -1,0 +1,843 @@
+Start testing: Apr 11 20:14 UTC
+----------------------------------------------------------
+1/66 Testing: EqualPaths.Empty
+1/66 Test: EqualPaths.Empty
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.Empty"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.Empty" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1797== Memcheck, a memory error detector
+==1797== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1797== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1797== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.Empty
+==1797== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.Empty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.Empty
+[       OK ] EqualPaths.Empty (2 ms)
+[----------] 1 test from EqualPaths (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (11 ms total)
+[  PASSED  ] 1 test.
+==1797== 
+==1797== HEAP SUMMARY:
+==1797==     in use at exit: 0 bytes in 0 blocks
+==1797==   total heap usage: 279 allocs, 279 frees, 122,206 bytes allocated
+==1797== 
+==1797== All heap blocks were freed -- no leaks are possible
+==1797== 
+==1797== For lists of detected and suppressed errors, rerun with: -s
+==1797== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.Empty" end time: Apr 11 20:14 UTC
+"EqualPaths.Empty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/66 Testing: EqualPaths.RootOnly
+2/66 Test: EqualPaths.RootOnly
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.RootOnly"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.RootOnly" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1798== Memcheck, a memory error detector
+==1798== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1798== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1798== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.RootOnly
+==1798== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.RootOnly
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.RootOnly
+leftHeight is 0
+rightHeight is 0
+Max height is 1
+[       OK ] EqualPaths.RootOnly (4 ms)
+[----------] 1 test from EqualPaths (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (12 ms total)
+[  PASSED  ] 1 test.
+==1798== 
+==1798== HEAP SUMMARY:
+==1798==     in use at exit: 0 bytes in 0 blocks
+==1798==   total heap usage: 279 allocs, 279 frees, 122,227 bytes allocated
+==1798== 
+==1798== All heap blocks were freed -- no leaks are possible
+==1798== 
+==1798== For lists of detected and suppressed errors, rerun with: -s
+==1798== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.RootOnly" end time: Apr 11 20:14 UTC
+"EqualPaths.RootOnly" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/66 Testing: EqualPaths.RootLeft
+3/66 Test: EqualPaths.RootLeft
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.RootLeft"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.RootLeft" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1799== Memcheck, a memory error detector
+==1799== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1799== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1799== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.RootLeft
+==1799== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.RootLeft
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.RootLeft
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 0
+Max height is 2
+[       OK ] EqualPaths.RootLeft (4 ms)
+[----------] 1 test from EqualPaths (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (13 ms total)
+[  PASSED  ] 1 test.
+==1799== 
+==1799== HEAP SUMMARY:
+==1799==     in use at exit: 0 bytes in 0 blocks
+==1799==   total heap usage: 279 allocs, 279 frees, 122,227 bytes allocated
+==1799== 
+==1799== All heap blocks were freed -- no leaks are possible
+==1799== 
+==1799== For lists of detected and suppressed errors, rerun with: -s
+==1799== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.RootLeft" end time: Apr 11 20:14 UTC
+"EqualPaths.RootLeft" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/66 Testing: EqualPaths.RootRight
+4/66 Test: EqualPaths.RootRight
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.RootRight"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.RootRight" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1800== Memcheck, a memory error detector
+==1800== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1800== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1800== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.RootRight
+==1800== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.RootRight
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.RootRight
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 1
+Max height is 2
+[       OK ] EqualPaths.RootRight (3 ms)
+[----------] 1 test from EqualPaths (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (13 ms total)
+[  PASSED  ] 1 test.
+==1800== 
+==1800== HEAP SUMMARY:
+==1800==     in use at exit: 0 bytes in 0 blocks
+==1800==   total heap usage: 279 allocs, 279 frees, 122,234 bytes allocated
+==1800== 
+==1800== All heap blocks were freed -- no leaks are possible
+==1800== 
+==1800== For lists of detected and suppressed errors, rerun with: -s
+==1800== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.RootRight" end time: Apr 11 20:14 UTC
+"EqualPaths.RootRight" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/66 Testing: EqualPaths.Full1
+5/66 Test: EqualPaths.Full1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.Full1"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.Full1" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1801== Memcheck, a memory error detector
+==1801== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1801== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1801== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.Full1
+==1801== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.Full1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.Full1
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 1
+Max height is 2
+[       OK ] EqualPaths.Full1 (3 ms)
+[----------] 1 test from EqualPaths (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (13 ms total)
+[  PASSED  ] 1 test.
+==1801== 
+==1801== HEAP SUMMARY:
+==1801==     in use at exit: 0 bytes in 0 blocks
+==1801==   total heap usage: 279 allocs, 279 frees, 122,206 bytes allocated
+==1801== 
+==1801== All heap blocks were freed -- no leaks are possible
+==1801== 
+==1801== For lists of detected and suppressed errors, rerun with: -s
+==1801== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.Full1" end time: Apr 11 20:14 UTC
+"EqualPaths.Full1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/66 Testing: EqualPaths.TrueTest1
+6/66 Test: EqualPaths.TrueTest1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.TrueTest1"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.TrueTest1" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1802== Memcheck, a memory error detector
+==1802== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1802== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1802== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.TrueTest1
+==1802== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.TrueTest1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.TrueTest1
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 1
+leftHeight is 2
+rightHeight is 2
+Max height is 3
+[       OK ] EqualPaths.TrueTest1 (4 ms)
+[----------] 1 test from EqualPaths (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (13 ms total)
+[  PASSED  ] 1 test.
+==1802== 
+==1802== HEAP SUMMARY:
+==1802==     in use at exit: 0 bytes in 0 blocks
+==1802==   total heap usage: 279 allocs, 279 frees, 122,234 bytes allocated
+==1802== 
+==1802== All heap blocks were freed -- no leaks are possible
+==1802== 
+==1802== For lists of detected and suppressed errors, rerun with: -s
+==1802== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.TrueTest1" end time: Apr 11 20:14 UTC
+"EqualPaths.TrueTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/66 Testing: EqualPaths.TrueTest2
+7/66 Test: EqualPaths.TrueTest2
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.TrueTest2"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.TrueTest2" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1803== Memcheck, a memory error detector
+==1803== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1803== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1803== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.TrueTest2
+==1803== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.TrueTest2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.TrueTest2
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 1
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 1
+leftHeight is 2
+rightHeight is 2
+Max height is 3
+[       OK ] EqualPaths.TrueTest2 (4 ms)
+[----------] 1 test from EqualPaths (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (13 ms total)
+[  PASSED  ] 1 test.
+==1803== 
+==1803== HEAP SUMMARY:
+==1803==     in use at exit: 0 bytes in 0 blocks
+==1803==   total heap usage: 279 allocs, 279 frees, 122,234 bytes allocated
+==1803== 
+==1803== All heap blocks were freed -- no leaks are possible
+==1803== 
+==1803== For lists of detected and suppressed errors, rerun with: -s
+==1803== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.40 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.TrueTest2" end time: Apr 11 20:14 UTC
+"EqualPaths.TrueTest2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/66 Testing: EqualPaths.TrueTest3
+8/66 Test: EqualPaths.TrueTest3
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.TrueTest3"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.TrueTest3" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1804== Memcheck, a memory error detector
+==1804== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1804== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1804== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.TrueTest3
+==1804== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.TrueTest3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.TrueTest3
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 1
+leftHeight is 2
+rightHeight is 2
+Max height is 3
+[       OK ] EqualPaths.TrueTest3 (4 ms)
+[----------] 1 test from EqualPaths (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (13 ms total)
+[  PASSED  ] 1 test.
+==1804== 
+==1804== HEAP SUMMARY:
+==1804==     in use at exit: 0 bytes in 0 blocks
+==1804==   total heap usage: 279 allocs, 279 frees, 122,234 bytes allocated
+==1804== 
+==1804== All heap blocks were freed -- no leaks are possible
+==1804== 
+==1804== For lists of detected and suppressed errors, rerun with: -s
+==1804== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.TrueTest3" end time: Apr 11 20:14 UTC
+"EqualPaths.TrueTest3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/66 Testing: EqualPaths.TrueTest4
+9/66 Test: EqualPaths.TrueTest4
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.TrueTest4"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.TrueTest4" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1805== Memcheck, a memory error detector
+==1805== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1805== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1805== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.TrueTest4
+==1805== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.TrueTest4
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.TrueTest4
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 1
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 1
+leftHeight is 2
+rightHeight is 2
+Max height is 3
+[       OK ] EqualPaths.TrueTest4 (4 ms)
+[----------] 1 test from EqualPaths (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (13 ms total)
+[  PASSED  ] 1 test.
+==1805== 
+==1805== HEAP SUMMARY:
+==1805==     in use at exit: 0 bytes in 0 blocks
+==1805==   total heap usage: 279 allocs, 279 frees, 122,234 bytes allocated
+==1805== 
+==1805== All heap blocks were freed -- no leaks are possible
+==1805== 
+==1805== For lists of detected and suppressed errors, rerun with: -s
+==1805== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.TrueTest4" end time: Apr 11 20:14 UTC
+"EqualPaths.TrueTest4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/66 Testing: EqualPaths.FalseTest1
+10/66 Test: EqualPaths.FalseTest1
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.FalseTest1"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.FalseTest1" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1806== Memcheck, a memory error detector
+==1806== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1806== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1806== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.FalseTest1
+==1806== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.FalseTest1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.FalseTest1
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 0
+leftHeight is 1
+rightHeight is 2
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 1
+leftHeight is 3
+rightHeight is 2
+Max height is 4
+[       OK ] EqualPaths.FalseTest1 (5 ms)
+[----------] 1 test from EqualPaths (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (13 ms total)
+[  PASSED  ] 1 test.
+==1806== 
+==1806== HEAP SUMMARY:
+==1806==     in use at exit: 0 bytes in 0 blocks
+==1806==   total heap usage: 279 allocs, 279 frees, 122,241 bytes allocated
+==1806== 
+==1806== All heap blocks were freed -- no leaks are possible
+==1806== 
+==1806== For lists of detected and suppressed errors, rerun with: -s
+==1806== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.FalseTest1" end time: Apr 11 20:14 UTC
+"EqualPaths.FalseTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/66 Testing: EqualPaths.FalseTest2
+11/66 Test: EqualPaths.FalseTest2
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.FalseTest2"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.FalseTest2" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1807== Memcheck, a memory error detector
+==1807== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1807== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1807== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.FalseTest2
+==1807== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.FalseTest2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.FalseTest2
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 1
+leftHeight is 1
+rightHeight is 2
+Max height is 3
+[       OK ] EqualPaths.FalseTest2 (4 ms)
+[----------] 1 test from EqualPaths (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (12 ms total)
+[  PASSED  ] 1 test.
+==1807== 
+==1807== HEAP SUMMARY:
+==1807==     in use at exit: 0 bytes in 0 blocks
+==1807==   total heap usage: 279 allocs, 279 frees, 122,241 bytes allocated
+==1807== 
+==1807== All heap blocks were freed -- no leaks are possible
+==1807== 
+==1807== For lists of detected and suppressed errors, rerun with: -s
+==1807== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.41 sec
+----------------------------------------------------------
+Test Passed.
+"EqualPaths.FalseTest2" end time: Apr 11 20:14 UTC
+"EqualPaths.FalseTest2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/66 Testing: EqualPaths.FalseTest3
+12/66 Test: EqualPaths.FalseTest3
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests" "--gtest_filter=EqualPaths.FalseTest3"
+Directory: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests
+"EqualPaths.FalseTest3" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1808== Memcheck, a memory error detector
+==1808== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1808== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1808== Command: /work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests --gtest_filter=EqualPaths.FalseTest3
+==1808== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = EqualPaths.FalseTest3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EqualPaths
+[ RUN      ] EqualPaths.FalseTest3
+leftHeight is 0
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 1
+rightHeight is 0
+leftHeight is 0
+rightHeight is 0
+leftHeight is 2
+rightHeight is 1
+leftHeight is 0
+rightHeight is 0
+leftHeight is 3
+rightHeight is 1
+leftHeight is 1
+rightHeight is 4
+leftHeight is 0
+rightHeight is 5
+Max height is 6
+/work/hw-alamgir/hw4/hw4_tests/equalpaths_tests/equalpaths_tests.cpp:367: Failure
+Value of: checkEqualPathsResult(expected, &a, t)
+  Actual: false (
+[Values do not match] 
+  Expected: false
+  Actual: true
+Tree used: 
+  a        
+  \       
+   b       
+   / \    
+  c   d    
+     / \  
+    e   f  
+   / \    
+  g   h    
+ /         
+i          
+
+)
+Expected: true
+[  FAILED  ] EqualPaths.FalseTest3 (12 ms)
+[----------] 1 test from EqualPaths (14 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (22 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] EqualPaths.FalseTest3
+
+ 1 FAILED TEST
+==1808== 
+==1808== HEAP SUMMARY:
+==1808==     in use at exit: 0 bytes in 0 blocks
+==1808==   total heap usage: 339 allocs, 339 frees, 139,005 bytes allocated
+==1808== 
+==1808== All heap blocks were freed -- no leaks are possible
+==1808== 
+==1808== For lists of detected and suppressed errors, rerun with: -s
+==1808== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Failed.
+"EqualPaths.FalseTest3" end time: Apr 11 20:14 UTC
+"EqualPaths.FalseTest3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/66 Testing: BST.ConstructionDestruction
+13/66 Test: BST.ConstructionDestruction
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/bst_tests/bst_tests" "--gtest_filter=BST.ConstructionDestruction"
+Directory: /work/hw-alamgir/hw4/hw4_tests/bst_tests
+"BST.ConstructionDestruction" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1809== Memcheck, a memory error detector
+==1809== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1809== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1809== Command: /work/hw-alamgir/hw4/hw4_tests/bst_tests/bst_tests --gtest_filter=BST.ConstructionDestruction
+==1809== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = BST.ConstructionDestruction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BST
+[ RUN      ] BST.ConstructionDestruction
+[       OK ] BST.ConstructionDestruction (1 ms)
+[----------] 1 test from BST (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (11 ms total)
+[  PASSED  ] 1 test.
+==1809== 
+==1809== HEAP SUMMARY:
+==1809==     in use at exit: 0 bytes in 0 blocks
+==1809==   total heap usage: 504 allocs, 504 frees, 135,526 bytes allocated
+==1809== 
+==1809== All heap blocks were freed -- no leaks are possible
+==1809== 
+==1809== For lists of detected and suppressed errors, rerun with: -s
+==1809== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"BST.ConstructionDestruction" end time: Apr 11 20:14 UTC
+"BST.ConstructionDestruction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/66 Testing: BSTInsert.JustRoot
+14/66 Test: BSTInsert.JustRoot
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/bst_tests/bst_tests" "--gtest_filter=BSTInsert.JustRoot"
+Directory: /work/hw-alamgir/hw4/hw4_tests/bst_tests
+"BSTInsert.JustRoot" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1810== Memcheck, a memory error detector
+==1810== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1810== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1810== Command: /work/hw-alamgir/hw4/hw4_tests/bst_tests/bst_tests --gtest_filter=BSTInsert.JustRoot
+==1810== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = BSTInsert.JustRoot
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BSTInsert
+[ RUN      ] BSTInsert.JustRoot
+[       OK ] BSTInsert.JustRoot (7 ms)
+[----------] 1 test from BSTInsert (10 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (17 ms total)
+[  PASSED  ] 1 test.
+==1810== 
+==1810== HEAP SUMMARY:
+==1810==     in use at exit: 0 bytes in 0 blocks
+==1810==   total heap usage: 506 allocs, 506 frees, 135,623 bytes allocated
+==1810== 
+==1810== All heap blocks were freed -- no leaks are possible
+==1810== 
+==1810== For lists of detected and suppressed errors, rerun with: -s
+==1810== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Passed.
+"BSTInsert.JustRoot" end time: Apr 11 20:14 UTC
+"BSTInsert.JustRoot" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/66 Testing: BSTInsert.DoubleInsertLeft
+15/66 Test: BSTInsert.DoubleInsertLeft
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/bst_tests/bst_tests" "--gtest_filter=BSTInsert.DoubleInsertLeft"
+Directory: /work/hw-alamgir/hw4/hw4_tests/bst_tests
+"BSTInsert.DoubleInsertLeft" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1811== Memcheck, a memory error detector
+==1811== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1811== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1811== Command: /work/hw-alamgir/hw4/hw4_tests/bst_tests/bst_tests --gtest_filter=BSTInsert.DoubleInsertLeft
+==1811== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = BSTInsert.DoubleInsertLeft
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BSTInsert
+[ RUN      ] BSTInsert.DoubleInsertLeft
+[       OK ] BSTInsert.DoubleInsertLeft (8 ms)
+[----------] 1 test from BSTInsert (11 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (18 ms total)
+[  PASSED  ] 1 test.
+==1811== 
+==1811== HEAP SUMMARY:
+==1811==     in use at exit: 0 bytes in 0 blocks
+==1811==   total heap usage: 508 allocs, 508 frees, 135,679 bytes allocated
+==1811== 
+==1811== All heap blocks were freed -- no leaks are possible
+==1811== 
+==1811== For lists of detected and suppressed errors, rerun with: -s
+==1811== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"BSTInsert.DoubleInsertLeft" end time: Apr 11 20:14 UTC
+"BSTInsert.DoubleInsertLeft" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/66 Testing: BSTInsert.DoubleInsertRight
+16/66 Test: BSTInsert.DoubleInsertRight
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/bst_tests/bst_tests" "--gtest_filter=BSTInsert.DoubleInsertRight"
+Directory: /work/hw-alamgir/hw4/hw4_tests/bst_tests
+"BSTInsert.DoubleInsertRight" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1812== Memcheck, a memory error detector
+==1812== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1812== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1812== Command: /work/hw-alamgir/hw4/hw4_tests/bst_tests/bst_tests --gtest_filter=BSTInsert.DoubleInsertRight
+==1812== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = BSTInsert.DoubleInsertRight
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BSTInsert
+[ RUN      ] BSTInsert.DoubleInsertRight
+[       OK ] BSTInsert.DoubleInsertRight (8 ms)
+[----------] 1 test from BSTInsert (10 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (17 ms total)
+[  PASSED  ] 1 test.
+==1812== 
+==1812== HEAP SUMMARY:
+==1812==     in use at exit: 0 bytes in 0 blocks
+==1812==   total heap usage: 508 allocs, 508 frees, 135,686 bytes allocated
+==1812== 
+==1812== All heap blocks were freed -- no leaks are possible
+==1812== 
+==1812== For lists of detected and suppressed errors, rerun with: -s
+==1812== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Passed.
+"BSTInsert.DoubleInsertRight" end time: Apr 11 20:14 UTC
+"BSTInsert.DoubleInsertRight" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/66 Testing: BSTInsert.InsertZigZigLeft
+17/66 Test: BSTInsert.InsertZigZigLeft
+Command: "/usr/bin/valgrind" "--tool=memcheck" "--leak-check=yes" "--trace-children=no" "/work/hw-alamgir/hw4/hw4_tests/bst_tests/bst_tests" "--gtest_filter=BSTInsert.InsertZigZigLeft"
+Directory: /work/hw-alamgir/hw4/hw4_tests/bst_tests
+"BSTInsert.InsertZigZigLeft" start time: Apr 11 20:14 UTC
+Output:
+----------------------------------------------------------
+==1813== Memcheck, a memory error detector
+==1813== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1813== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1813== Command: /work/hw-alamgir/hw4/hw4_tests/bst_tests/bst_tests --gtest_filter=BSTInsert.InsertZigZigLeft
+==1813== 
+Running main() from /build/googletest-K1TalW/googletest-1.10.0/googletest/src/gtest_main.cc
+Note: Google Test filter = BSTInsert.InsertZigZigLeft
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BSTInsert
+[ RUN      ] BSTInsert.InsertZigZigLeft
+[       OK ] BSTInsert.InsertZigZigLeft (8 ms)
+[----------] 1 test from BSTInsert (11 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (18 ms total)
+[  PASSED  ] 1 test.
+==1813== 
+==1813== HEAP SUMMARY:
+==1813==     in use at exit: 0 bytes in 0 blocks
+==1813==   total heap usage: 510 allocs, 510 frees, 135,759 bytes allocated
+==1813== 
+==1813== All heap blocks were freed -- no leaks are possible
+==1813== 
+==1813== For lists of detected and suppressed errors, rerun with: -s
+==1813== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"BSTInsert.InsertZigZigLeft" end time: Apr 11 20:14 UTC
+"BSTInsert.InsertZigZigLeft" time elapsed: 00:00:00
+----------------------------------------------------------
+
